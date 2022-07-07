@@ -1,2 +1,3 @@
-# 02_Self_Study
+# Data Science Self Study
+
 Self Study
