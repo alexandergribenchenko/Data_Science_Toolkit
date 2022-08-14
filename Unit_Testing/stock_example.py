@@ -58,15 +58,15 @@ print(df_truth.TSLA[0])
 
 
 
-# def stock_plot(price):
-#     fig, ax = plt.subplots()
-#     tickers = price.columns.to_list()
-#     for ticker in tickers:
-#         ax.plot(price[[ticker]], label=ticker)
-#     ax.set_xlabel('Date')
-#     ax.set_ylabel('Adjusted closing price')
-#     ax.legend()
-#     return fig
+def stock_plot(price):
+    fig, ax = plt.subplots()
+    tickers = price.columns.to_list()
+    for ticker in tickers:
+        ax.plot(price[[ticker]], label=ticker)
+    ax.set_xlabel('Date')
+    ax.set_ylabel('Adjusted closing price')
+    ax.legend()
+    return fig
 
 # def calculate_daily_returns(allocation, price):
 #     """

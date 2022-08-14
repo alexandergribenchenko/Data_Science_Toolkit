@@ -1,4 +1,4 @@
-from stock_example import stock_data
+from stock_example import stock_data, stock_plot
 # from stock_example import get_data, stock_plot, neg_sharpe_ratio, optimize_sharpe_ratio
 from datetime import datetime
 import pandas as pd
@@ -29,28 +29,28 @@ def test_stock_data():
     # make sure they are the same
     assert_frame_equal(df_func, df_truth)   
 
-# @pytest.fixture
-# def load_data():
-#     # what we get from the function
-#     tickers = ['AAPL','GOOGL', 'TSLA']  
-#     start_date = '2019-01-02'
-#     end_date = '2020-01-03'
-#     df_func = get_data(tickers, start_date, end_date)  
-#     return df_func 
+@pytest.fixture
+def load_data():
+    # what we get from the function
+    tickers = ['AAPL','GOOGL', 'TSLA']  
+    start_date = '2019-01-02'
+    end_date = '2020-01-03'
+    df_func = stock_data(tickers, start_date, end_date)  
+    return df_func 
 
-# def test_load_data(load_data):
-#     # verify the shape and cell values of input data
-#     df = load_data
-#     assert df.shape == (253, 3)
-#     assert df.notnull().values.any() == True
-#     assert (df>0).values.any() == True
-#     assert (df.columns == ['AAPL', 'GOOGL', 'TSLA']).any() == True
+def test_load_data(load_data):
+    # verify the shape and cell values of input data
+    df = load_data
+    assert df.shape == (253, 3)
+    assert df.notnull().values.any() == True
+    assert (df>0).values.any() == True
+    assert (df.columns == ['AAPL', 'GOOGL', 'TSLA']).any() == True
 
-# # TEST VISUALIZATION
-# @pytest.mark.mpl_image_compare(remove_text=True, tolerance=3)
-# def test_stock_plot(load_data):
-#     plot = stock_plot(load_data)
-#     return plot
+# TEST VISUALIZATION
+@pytest.mark.mpl_image_compare(remove_text=True, tolerance=3)
+def test_stock_plot(load_data):
+    plot = stock_plot(load_data)
+    return plot
 
 # # TEST DATA PROCESSING
 # @pytest.mark.parametrize('allocation, expected', [
