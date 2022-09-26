@@ -1,4 +1,20 @@
 ## To consult
+- YALM
+- Pull Request
+- Deploy
+
+
+
+- CLI
+
+
+#### SDK (Software Development Kit)
+
+Un kit de desarrollo de software (SDK) es un conjunto de herramientas proporcionado usualmente por el fabricante de una plataforma de hardware, un sistema operativo (SO) o un lenguaje de programación.
+
+Example: The Azure SDK for Python is composed solely of over 180 individual Python libraries that relate to specific Azure services. There are no other tools in the "SDK". The Azure libraries are how you communicate with Azure services from Python code that you run either locally or in the cloud. The open-source Azure libraries for Python simplify provisioning, managing, and using Azure resources from Python application code.
+
+[Example: Azure SDK for python](https://learn.microsoft.com/en-us/azure/developer/python/sdk/azure-sdk-overview)
 
 #### RPA (Robotic Process Automation)
 
