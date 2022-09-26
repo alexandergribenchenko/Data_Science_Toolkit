@@ -5,8 +5,13 @@
 
 
 
-- CLI
+#### CLI (Command Line Interface)
 
+La interfaz de línea de comando (CLI) es una interfaz de texto, a la que se accede mediante comandos en prompts, en lugar de usar el mouse a través de la interfaz gráfica del usuario (GUI). Entre sus ventajas, CLI se destaca por su potencia, velocidad y capacidad para realizar una amplia gama de tareas con una sola instrucción de línea de comando. 
+
+Example: The Azure command-line interface (Azure CLI) is a set of commands used to create and manage Azure resources. The Azure CLI is available across Azure services and is designed to get you working quickly with Azure, with an emphasis on automation.
+
+[Example: Azure CLI](https://learn.microsoft.com/en-us/cli/azure/)
 
 #### SDK (Software Development Kit)
 
