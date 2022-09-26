@@ -1,7 +1,13 @@
 ## To consult
+
+01. Deploy
 - YALM
 - Pull Request
-- Deploy
+- Docker
+- AKS (Azure Kubernetes Services)
+- ACI (Azure Cointainer Instnaces)
+
+02. Spark
 - UDF in Spark
 
 ---
