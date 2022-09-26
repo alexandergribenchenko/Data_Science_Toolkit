@@ -20,6 +20,8 @@ Un kit de desarrollo de software (SDK) es un conjunto de herramientas proporcion
 
 Example: The Azure SDK for Python is composed solely of over 180 individual Python libraries that relate to specific Azure services. There are no other tools in the "SDK". The Azure libraries are how you communicate with Azure services from Python code that you run either locally or in the cloud. The open-source Azure libraries for Python simplify provisioning, managing, and using Azure resources from Python application code.
 
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/LW2iinnqVSk/0.jpg)](http://www.youtube.com/watch?v=LW2iinnqVSk)
+
 [Example: Azure SDK for python](https://learn.microsoft.com/en-us/azure/developer/python/sdk/azure-sdk-overview)
 
 #### RPA (Robotic Process Automation)
