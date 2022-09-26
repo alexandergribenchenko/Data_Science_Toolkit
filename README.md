@@ -1,3 +1,3 @@
-# Data Science Self Study
+# Data Science Toolkit
 
-Self Study
+Self Toolkit
