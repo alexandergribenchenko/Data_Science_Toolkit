@@ -10,6 +10,9 @@
 02. Spark
 - UDF in Spark
 
+03. Email sending Python
+- Enviroment variables (para no exponer contraseñas)
+
 ---
 
 #### CLI (Command Line Interface)
