@@ -1,3 +1,5 @@
+# 01. Configure before in your email acount: https://myaccount.google.com/apppasswords
+
 import os
 import smtplib
 import imghdr
