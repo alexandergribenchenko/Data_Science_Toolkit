@@ -2,6 +2,12 @@
 ## H2
 ### H3
 
+
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Paragraph | Text |
+
 ~~The world is flat.~~
 
 I need to highlight these ==very important words==
