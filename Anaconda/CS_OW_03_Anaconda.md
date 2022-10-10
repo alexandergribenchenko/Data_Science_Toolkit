@@ -2,16 +2,11 @@
 
 - `conda info` : Entrega toda la información de conda (en particular las rutas donde fue instalado. Por defecto queda instalada en  `active env location : C:\ProgramData\Anaconda3`).
 - `conda --version` : Conocer la versión de conda
+- `pip --version` : Conocer la versión de pip
+- `conda env list` : Listar todos los ambientes de conda
+- `conda create -n nombre_del_ambiente` : Crear un nuevo ambiente en conda llamado nombre_del_ambiente
 
 
-# Conocer la versión de pip
-pip --version
-
-# Listar todos los ambientes de conda
-conda env list
-
-# Crear un nuevo ambiente en conda llamado nombre_del_ambiente
-conda create -n nombre_del_ambiente
 
 # Crear un nuevo ambiente en conda en una ruta específica
 conda create --prefix C:\ProgramData\Anaconda3\envs\nombreambiente
