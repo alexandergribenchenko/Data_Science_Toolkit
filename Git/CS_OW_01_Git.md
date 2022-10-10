@@ -20,7 +20,7 @@
 ## 03. Conectar repositorios: Local - Github
 - `git init` : Inicializa el repositorio actual como un repositorio de git (lo empieza a trackear)
 - `git remote add origin https://github.com/alexandergribenchenko/MLOps_MVP_XXX.git`: Sube repositorio local a repositorio en github
-- `git clone https://github.com/alexandergribenchenko/Pycaret_Exploration.git`: baja repositorio en github y lo vincula en local (el repositorio de github se genera como una subcarpeta dentro de la carpeta local en la que estemos ubicados). 
+- `git clone https://github.com/alexandergribenchenko/Pycaret_Exploration.git`: baja repositorio de github y lo vincula en local (el repositorio de github se genera como una subcarpeta dentro de la carpeta local en la que estemos ubicados). 
 - `git status` : Muestra que que archivos se han modificado en el working directory para agregarlos al commit.
 - `git add .` : Adicionar todos lo archivos a la staging area para posteriormente poder hacer el commit
 - `git commit -m 'Primer commmit'` : Se genera el commit
