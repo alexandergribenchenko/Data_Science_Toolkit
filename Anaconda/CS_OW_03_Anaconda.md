@@ -23,7 +23,7 @@ Ejemplos: `conda install jupyterlab` y `conda install -c conda-forge prophet`.
 
 # 04. Anaconda Prompt
 - `(AV_01_rutas) C:\Users\2015901\Desktop\PY_AV_01_Rutas>jupyter lab`: Ejecutar **juyterlab** en un entorno especifico y abrir en un folder especifico.
-- `(env_01_finanzas) C:\Users\Fiodor>D:\Code\Finanzas`: Cambiar entre discos duros en el terminal
+- `(env_01_finanzas) C:\Users\Fiodor>D:`: Cambiar entre discos duros en el terminal
 
 
 
