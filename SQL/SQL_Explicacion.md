@@ -7,3 +7,4 @@
 # 02. Bases de datos
 - PostgreSQL
 - MySQL
+- Microsoft SQL Server
