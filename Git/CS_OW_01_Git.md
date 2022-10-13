@@ -7,7 +7,7 @@
 - `cd ~` : Ir al directorio raiz (donde por defecto se encuentran los documentos)
 - `cd /` : Ir al directorio raiz (donde esta alojado GIT en el disco)
 - `ls -la` : Enlistar los archivos del directorio actual
-- `cd /c/Users/Fiodor/00_Github/MLOps_MVP_01` : Cambiar de directorio específico
+- `cd /d/Github/data_science_C1` : Cambiar de directorio específico
 - `cd /c/X_TCS_Documents/Github/data_science_C1`: Cambiar de directorio específico
 - `cd [foder_name]` : Avanzar un nivel en directorios
 - `cd ..` : Retroceder un nivel en directorios
