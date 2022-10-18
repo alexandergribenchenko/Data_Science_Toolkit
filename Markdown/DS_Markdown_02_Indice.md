@@ -1,6 +1,6 @@
 **Índice**   
-[Primer apartado](#id1)
-[Segundo apartado](#id2)
+- [Primer apartado](#id1)
+- [Segundo apartado](#id2)
 
 
 
