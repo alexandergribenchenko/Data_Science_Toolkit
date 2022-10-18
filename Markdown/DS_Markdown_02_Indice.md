@@ -1,11 +1,11 @@
 **Índice**   
-- [Primer apartado](#id1)
+- [Primer apartado](#Primer apartado)
 - [Segundo apartado](#id2)
 
 
 
 
-# Primer apartado<a name="id1"></a>
+# Primer apartado<a name="Primer apartado"></a>
 Texto del primer apartado
 # Segundo apartado<a name="id2"></a>
 Texto del segundo apartado
