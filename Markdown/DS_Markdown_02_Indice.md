@@ -1,5 +1,5 @@
 **Índice**   
-- [Primer apartado](#'Primer_apartado')
+- [Primer gato apartado](#'Primer_apartado')
 - [Segundo apartado](#id2)
 
 
