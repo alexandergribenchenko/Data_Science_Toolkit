@@ -7,3 +7,7 @@
 }
 ```
 
+
+```excel
+=BUSCARV(E2;Jugadores!$A$2:$B$346;2;FALSO)
+```
