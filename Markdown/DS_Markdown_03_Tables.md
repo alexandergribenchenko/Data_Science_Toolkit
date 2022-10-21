@@ -1,6 +1,6 @@
 | escape characters      | Result |
 | ----------- | ----------- |
-|\'	          |Single Quote	|
+|\\'	          |Single Quote	|
 |\\	          |Backslash	|
 |\n	          |New Line	|
 |\r	          |Carriage Return	|
