@@ -1,3 +1,7 @@
+```python
+def suma(a,b):
+	return(a+b)
+```
 
 ```json
 {
@@ -5,11 +9,6 @@
   "lastName": "Smith",
   "age": 25
 }
-```
-
-
-```excel
-=BUSCARV(E2;Jugadores!$A$2:$B$346;2;FALSO)
 ```
 
 ```sql
@@ -24,12 +23,6 @@ WHERE RN<3
 GROUP BY customer_id
 ```
 
-```python
-def suma(a,b):
-	return(a+b)
-```
-
-```sql
-def suma(a,b):
-	return(a+b)
+```excel
+=BUSCARV(E2;Jugadores!$A$2:$B$346;2;FALSO)
 ```
