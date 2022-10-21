@@ -1,12 +1,11 @@
-| Syntax      | Description |
+| escape characters      | Result |
 | ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
-| Syntax      | Description |
-| ----------- | ----------- |
-| Header      | Title       |
-| Paragraph   | Text        |
+|\'	          |Single Quote	|
+|\\	          |Backslash	|
+|\n	          |New Line	|
+|\r	          |Carriage Return	|
+|\t	          |Tab	|
+|\b	          |Backspace	|
+|\f	          |Form Feed	|
+|\ooo	        |Octal value	|
+|\xhh	        |Hex value|
