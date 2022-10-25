@@ -1,24 +1,12 @@
 ## To consult
 
-01. Deploy
-- YALM
-- Pull Request
-- Docker
-- AKS (Azure Kubernetes Services)
-- ACI (Azure Cointainer Instnaces)
+# Para consultar
 
 02. Spark
 - UDF in Spark
 
 03. Email sending Python
 - Enviroment variables (para no exponer contraseñas)
-
----
-
-
-
-
-
 
 ---
 #### CLI (Command Line Interface)
