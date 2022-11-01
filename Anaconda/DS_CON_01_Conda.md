@@ -7,6 +7,7 @@
 - `conda env list` : Listar todos los ambientes de conda
 - `conda -h` ó `conda --help`: Ayuda de conda
 - `conda update --prefix C:\Users\2015901\Anaconda3 anaconda`: actualizar anaconda
+- `conda update --prefix C:\Users\2015901\Anaconda3 conda`: actualizar conda
 
 # 02. Gestionar ambientes con conda
 - `conda create -n nombre_del_ambiente` : Crear un nuevo ambiente en conda llamado nombre_del_ambiente
