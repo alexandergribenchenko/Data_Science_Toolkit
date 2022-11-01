@@ -5,7 +5,7 @@
 - `conda --version` : Conocer la versión de conda
 - `pip --version` : Conocer la versión de pip
 - `conda env list` : Listar todos los ambientes de conda
-- - `conda -h` o `conda --help`: Ayuda de conda
+- `conda -h` ó `conda --help`: Ayuda de conda
 
 # 02. Gestionar ambientes con conda
 - `conda create -n nombre_del_ambiente` : Crear un nuevo ambiente en conda llamado nombre_del_ambiente
@@ -15,7 +15,7 @@
 - `conda activate nombre_del_ambiente`: Activar un ambiente en conda llamado nombre_del_ambiente
 - `conda list`: Listar todas las librerías de conda instaladas (en el ambiente actual)
 
-- `conda env create -f path_archivo.yml`: Crear un nuevo ambiente en conda desde un archivo .yml
+- `conda env create -f path_archivo.yml`: Crear un nuevo ambiente en conda desde un archivo `.yml`
 
 # 03. Instalar o actualizar librerías 
 - `conda install nombre_de_la_libreria`: instalar librería con conda (en el ambiente actual) llamada nombre_de_la_libreria.
