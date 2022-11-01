@@ -16,7 +16,6 @@
 - `conda activate`: Activar el ambiente base de conda
 - `conda activate nombre_del_ambiente`: Activar un ambiente en conda llamado nombre_del_ambiente
 - `conda list`: Listar todas las librerías de conda instaladas (en el ambiente actual)
-
 - `conda env create -f path_archivo.yml`: Crear un nuevo ambiente en conda desde un archivo `.yml`
 
 # 03. Instalar o actualizar librerías 
