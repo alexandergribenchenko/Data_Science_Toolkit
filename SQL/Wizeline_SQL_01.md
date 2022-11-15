@@ -44,28 +44,19 @@ FROM results
 ORDER BY wins
 ```
 
-# Q_XX
+# Q_07
 ```sql
-SELECT email
-FROM users
-WHERE role NOT IN ("admin", "premium")
-ORDER BY email ASC
+SELECT name
+FROM Products
+ORDER BY price*quantity DESC, name LIMIT 1
+```
+```sql
+SELECT MIN(name) as name
+FROM Products
+WHERE price*quantity = (SELECT MAX(price*quantity) FROM Products)
 ```
 
-# Q_XX
-```sql
-SELECT email
-FROM users
-WHERE role NOT IN ("admin", "premium")
-ORDER BY email ASC
-```
-
-# Q_XX
-```sql
-
-```
-
-# Q_XX
+# Q_08
 ```sql
 
 ```
