@@ -30,7 +30,7 @@ ORDER BY name ASC
 ```
 
 # Q_05
-```sql
+```mysql
 SELECT email
 FROM users
 WHERE role NOT IN ("admin", "premium")
