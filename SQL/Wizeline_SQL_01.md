@@ -13,19 +13,21 @@ WHERE continent = 'Africa'
 ORDER BY name ASC
 ```
 
-# Q_02
+# Q_03
 ```sql
-SELECT * 
-FROM countries 
-WHERE continent = 'Africa'
+SELECT  id, 
+        (scholarship / 12) AS scholarship 
+FROM scholarships
+ORDER BY id ASC
 ORDER BY name ASC
 ```
 
-# Q_03
+# Q_04
 ```sql
 
 ```
-# Q_04
+
+# Q_05
 ```sql
 
 ```
