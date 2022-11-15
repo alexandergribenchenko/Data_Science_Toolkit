@@ -54,48 +54,29 @@ ORDER BY email ASC
 
 # Q_XX
 ```sql
-SELECT email
-FROM users
-WHERE role NOT IN ("admin", "premium")
-ORDER BY email ASC
+
 ```
 
 # Q_XX
 ```sql
-SELECT email
-FROM users
-WHERE role NOT IN ("admin", "premium")
-ORDER BY email ASC
+
 ```
 
 # Q_XX
 ```sql
-SELECT email
-FROM users
-WHERE role NOT IN ("admin", "premium")
-ORDER BY email ASC
+
 ```
 
 # Q_XX
 ```sql
-SELECT email
-FROM users
-WHERE role NOT IN ("admin", "premium")
-ORDER BY email ASC
+
 ```
 
 # Q_XX
 ```sql
-SELECT email
-FROM users
-WHERE role NOT IN ("admin", "premium")
-ORDER BY email ASC
-```
 
+```
 # Q_XX
 ```sql
-SELECT email
-FROM users
-WHERE role NOT IN ("admin", "premium")
-ORDER BY email ASC
+
 ```
