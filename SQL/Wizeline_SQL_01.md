@@ -24,7 +24,9 @@ ORDER BY name ASC
 
 # Q_04
 ```sql
-
+SELECT DISTINCT name 
+FROM projectLog 
+ORDER BY name ASC
 ```
 
 # Q_05
