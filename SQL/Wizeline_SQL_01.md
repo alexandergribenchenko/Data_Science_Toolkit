@@ -29,10 +29,73 @@ FROM projectLog
 ORDER BY name ASC
 ```
 
-# Q_05
+# Q_06
+```sql
+SELECT *
+FROM results
+ORDER BY wins
+```
+
+# Q_XX
 ```sql
 SELECT email
 FROM users
 WHERE role NOT IN ("admin", "premium")
-ORDER BY email
+ORDER BY email ASC
+```
+
+# Q_XX
+```sql
+SELECT email
+FROM users
+WHERE role NOT IN ("admin", "premium")
+ORDER BY email ASC
+```
+
+# Q_XX
+```sql
+SELECT email
+FROM users
+WHERE role NOT IN ("admin", "premium")
+ORDER BY email ASC
+```
+
+# Q_XX
+```sql
+SELECT email
+FROM users
+WHERE role NOT IN ("admin", "premium")
+ORDER BY email ASC
+```
+
+# Q_XX
+```sql
+SELECT email
+FROM users
+WHERE role NOT IN ("admin", "premium")
+ORDER BY email ASC
+```
+
+# Q_XX
+```sql
+SELECT email
+FROM users
+WHERE role NOT IN ("admin", "premium")
+ORDER BY email ASC
+```
+
+# Q_XX
+```sql
+SELECT email
+FROM users
+WHERE role NOT IN ("admin", "premium")
+ORDER BY email ASC
+```
+
+# Q_XX
+```sql
+SELECT email
+FROM users
+WHERE role NOT IN ("admin", "premium")
+ORDER BY email ASC
 ```
