@@ -48,7 +48,8 @@ ORDER BY wins
 ```sql
 SELECT name
 FROM Products
-ORDER BY price*quantity DESC, name LIMIT 1
+ORDER BY price*quantity DESC, name 
+LIMIT 1
 ```
 ```sql
 SELECT MIN(name) as name
@@ -58,12 +59,20 @@ WHERE price*quantity = (SELECT MAX(price*quantity) FROM Products)
 
 # Q_08
 ```sql
-
+SELECT name 
+FROM leaderboard 
+ORDER BY score DESC 
+LIMIT 3,5;
 ```
 
-# Q_XX
+# Q_09
 ```sql
-
+SELECT	Name, 
+		ID 
+FROM	Grades 
+WHERE	Final > (Midterm1 + Midterm2)/2 
+		AND Final > ((Midterm1+Midterm2)/2 +Final)/2 
+ORDER BY SUBSTRING(Name, 1, 3), ID ASC
 ```
 
 # Q_XX
