@@ -12,3 +12,20 @@ FROM countries
 WHERE continent = 'Africa'
 ORDER BY name ASC
 ```
+
+# Q_02
+```sql
+SELECT * 
+FROM countries 
+WHERE continent = 'Africa'
+ORDER BY name ASC
+```
+
+# Q_03
+```sql
+
+```
+# Q_04
+```sql
+
+```
