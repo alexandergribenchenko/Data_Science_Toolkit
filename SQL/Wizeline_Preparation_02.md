@@ -8,6 +8,8 @@
 
 - https://verneacademy.com/blog/articulos-data/que-es-data-warehouse-data-marts-diferencias/
 
+- https://www.ml4devs.com/articles/datastore-choices-sql-vs-nosql-database/
+
 ## ¿Qué es una vista?
 Una vista es una tabla virtual cuyo contenido está definido por una consulta. Al igual que una tabla, una vista consta de un conjunto de columnas y filas de datos con un nombre. Sin embargo, a menos que esté indizada, una vista no existe como conjunto de valores de datos almacenados en una base de datos.
 
