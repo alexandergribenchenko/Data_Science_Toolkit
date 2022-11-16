@@ -6,8 +6,13 @@
 
 - https://hevodata.com/learn/data-engineering-tools/
 
+- https://verneacademy.com/blog/articulos-data/que-es-data-warehouse-data-marts-diferencias/
+
 ## ¿Qué es una vista?
 Una vista es una tabla virtual cuyo contenido está definido por una consulta. Al igual que una tabla, una vista consta de un conjunto de columnas y filas de datos con un nombre. Sin embargo, a menos que esté indizada, una vista no existe como conjunto de valores de datos almacenados en una base de datos.
+
+## ¿Qué es una OLTP y OLAP?
+Aunque son similares y son ambos sistemas de procesamiento de datos en línea, hay una gran diferencia entre ambos. OLTP permite la ejecución en tiempo real de un gran número de transacciones por parte de un gran número de personas, mientras que el procesamiento analítico en línea (OLAP) suele implicar la consulta de estas transacciones (también denominadas registros) en una base de datos con fines analíticos. OLAP ayuda a las empresas a extraer información de sus datos de transacción para que puedan utilizarla para tomar decisiones más informadas.
 
 # What is a Data Model?
 
