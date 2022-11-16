@@ -6,6 +6,8 @@
 
 - https://hevodata.com/learn/data-engineering-tools/
 
+## ¿Qué es una vista?
+Una vista es una tabla virtual cuyo contenido está definido por una consulta. Al igual que una tabla, una vista consta de un conjunto de columnas y filas de datos con un nombre. Sin embargo, a menos que esté indizada, una vista no existe como conjunto de valores de datos almacenados en una base de datos.
 
 # What is a Data Model?
 
@@ -87,7 +89,13 @@ La granularidad representa el nivel de información almacenada en una tabla. La 
 
 21. What’s a Confirmed Dimension?
 
-22. Why Are NoSQL Databases More Useful than Relational Databases?
+## 22. Why Are NoSQL Databases More Useful than Relational Databases?
+- Pueden almacenar datos estructurados, semiestructurados o no estructurados.
+- Tienen un esquema dinámico, lo que significa que pueden evolucionar y cambiar tan rápido como sea necesario.
+- Las bases de datos NoSQL tienen fragmentación, el proceso de dividir y distribuir datos a bases de datos más pequeñas para un acceso más rápido
+- Ofrecen failover y mejores opciones de recuperación gracias a la replicación
+- Es fácilmente escalable, crece o se reduce según sea necesario.
+
 
 23. What’s a Junk Dimension?
 
