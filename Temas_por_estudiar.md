@@ -9,7 +9,7 @@
 - FastAPI
 - Django
 
-### Herramientas y servicios
+### Herramientas y servicios:
 - Docker
 - AKS (Azure Kubernetes Services)
 - ACI (Azure Cointainer Instnaces)
