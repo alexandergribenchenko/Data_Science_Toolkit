@@ -14,7 +14,8 @@
 - `conda create -p C:\ProgramData\Anaconda3\envs\nombreambiente`: Crear un nuevo ambiente de conda en una ruta específica
 - `conda env remove -n nombre_del_ambiente`: Eliminar un ambiente en conda llamado nombre_del_ambiente
 - `conda activate`: Activar el ambiente base de conda
-- `conda activate nombre_del_ambiente`: Activar un ambiente en conda llamado nombre_del_ambiente
+- `conda activate nombre_del_ambiente`: Activar un ambiente de conda llamado nombre_del_ambiente que esta por defecto en  `C:\ProgramData\Anaconda3\envs\`
+- `conda activate C:\ProgramData\Anaconda3\envs\nombreambiente\`: Activar un ambiente de conda ubicado en una ruta específica.
 - `conda list`: Listar todas las librerías de conda instaladas (en el ambiente actual)
 - `pip list`: Listar todas las librerías de pip instaladas (en el ambiente actual)
 - `conda env create -f path_archivo.yml`: Crear un nuevo ambiente en conda desde un archivo `.yml`
