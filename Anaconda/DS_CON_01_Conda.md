@@ -10,8 +10,8 @@
 - `conda update --prefix C:\Users\2015901\Anaconda3 conda`: actualizar conda
 
 # 02. Gestionar ambientes con conda
-- `conda create -n nombre_del_ambiente` : Crear un nuevo ambiente en conda llamado nombre_del_ambiente
-- `conda create --prefix C:\ProgramData\Anaconda3\envs\nombreambiente`: Crear un nuevo ambiente en conda en una ruta específica
+- `conda create -n nombre_del_ambiente` : Crear un nuevo ambiente en conda llamado nombre_del_ambiente ubicada por defecto en el directorio `C:\ProgramData\Anaconda3\envs\`
+- `conda create -p C:\ProgramData\Anaconda3\envs\nombreambiente`: Crear un nuevo ambiente en conda en una ruta específica
 - `conda env remove -n nombre_del_ambiente`: Eliminar un ambiente en conda llamado nombre_del_ambiente
 - `conda activate`: Activar el ambiente base de conda
 - `conda activate nombre_del_ambiente`: Activar un ambiente en conda llamado nombre_del_ambiente
