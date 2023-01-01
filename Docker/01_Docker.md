@@ -1,10 +1,10 @@
 # DOCKER: CHEATSHEET PROPIO
 
-## Code Canvas Docker
+## A. Code Canvas Docker
 - [Code Canvas Docker](https://docs.google.com/presentation/d/1Ajv443VrFU6ks8x-0YY5-cEBpvB_4swAX5_pQSWuYmg/edit#slide=id.g1c9ad9ef6e5_0_6)
 - [Youtube personal docker](https://www.youtube.com/playlist?list=PLrJvjnSL5aF7YtpEFzc6qdLt7y0BdJVyY)
 
-## 01. Instalación
+## B. Instalación
 - [Verify Windows requeirements](https://docs.docker.com/desktop/install/windows-install/)
 - Windows 10 64-bit: Home or Pro 21H1 (build 19043) or higher.
 - Enable the WSL 2 feature on Windows. En caso de ser necesario: 
@@ -14,19 +14,16 @@
 - Proceder con la instalación (opciones por defecto)
 - wsl --set-default-version 2
 
-
-## 02. Comandos ejecutados en CMD
+## 01. Comandos generales
 - `docker`: Muestra todas las opciones de docker
 - `docker --version` ó `docker -v` : Versión de docker instalada
 
-
-## 03. Comandos de imagenes
+## 02. Comandos de imagenes
 - [dockerhub](https://hub.docker.com/) es el repositorio oficial donde se encuentrán las imagenes de docker.
 - `docker images`: Muestra un listado completo de todas las imagenes que se han descargado en la máquina.
 - `docker pull [nombre_imagen]`: Descargar la última versión de la imagen, es decir la que tiene el `TAG` latest. Ejemplo: `docker pull mysql`
 - `docker pull [nombre_imagen]:[#_vesion]`: Descargar una versión en específico de la imagen.
 - `docker image rm [nombre_imagen]:[#_vesion]`: Remover una imagen en específico de docker.
-- 
 
 
 ## Bonus: Youtube_commands
