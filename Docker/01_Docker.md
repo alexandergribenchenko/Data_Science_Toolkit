@@ -29,7 +29,7 @@
 - `docker create [imagen_base]` ó `docker container create [imagen_base]`: Crea un contenedor con base a una imagen base ya creada.
 - `docker create --name [nombre_que_queremos_dar] [imagen_base]` ó `docker container create --name [nombre_que_queremos_dar] [imagen_base]`: Crea un contenedor con base a una imagen base ya creada.
 - `docker start [container_id]` ó `docker start [container_id]`: ejecutar contenedor a partir de su id o su nombre.
-- - `docker ps -a`: enlista todos los contenedores se encuntren activos o no (esto se evalua en la columna `STATUS`).
+- `docker ps -a`: enlista todos los contenedores se encuntren activos o no (esto se evalua en la columna `STATUS`).
 - `docker ps`: enlista todos los contenedores se encuntren activos.
 - `docker stop [container_id]` ó `docker stop [container_id]`: detener contenedor a partir de su id o su nombre.
 - `docker rm [container_id]` ó `docker rm [container_id]`: remover contenedor a partir de su id o su nombre.
