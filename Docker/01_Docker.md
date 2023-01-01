@@ -22,4 +22,5 @@
 
 ## 03. Comandos de imagenes
 - `docker images`: Muestra un listado completo de todas las imagenes que se han descargado en la máquina.
-- `docker pull [nombre_imagen]` : Versión de docker instalada
+- `docker pull [nombre_imagen]`: Descarga la ultima versión de la imagen
+- `docker pull [nombre_imagen]:[#_vesion]`: Descarga una versión en específico de la imagen. 
