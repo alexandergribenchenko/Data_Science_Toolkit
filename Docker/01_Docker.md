@@ -27,6 +27,8 @@
 
 ## 03. Comandos de contenedores
 - `docker create [imagen_base]` ó `docker container create [imagen_base]`: Crea un contenedor con base a una imagen base ya creada.
+- `docker start [container_id]`: ejecutar contenedor
+- `docker ps`: enlista todos los contenedores que se encuentran actualmente activos.
 
 ## Bonus: Youtube_commands
 - `shift + .`: +x25% reproducción
