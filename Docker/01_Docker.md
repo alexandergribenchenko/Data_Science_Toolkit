@@ -21,9 +21,11 @@
 
 
 ## 03. Comandos de imagenes
+- [dockerhub](https://hub.docker.com/) es el repositorio oficial donde se encuentrán las imagenes de docker.
 - `docker images`: Muestra un listado completo de todas las imagenes que se han descargado en la máquina.
 - `docker pull [nombre_imagen]`: Descarga la ultima versión de la imagen, es decir la que tiene el `TAG` latest.
-- `docker pull [nombre_imagen]:[#_vesion]`: Descarga una versión en específico de la imagen. 
+- `docker pull [nombre_imagen]:[#_vesion]`: Descarga una versión en específico de la imagen.
+- 
 
 
 ## Bonus: Youtube_commands
