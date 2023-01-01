@@ -1,7 +1,7 @@
 # DOCKER: CHEATSHEET PROPIO
 
 ## 01. Instalación
-- [Verify Windows requeirements:](https://docs.docker.com/desktop/install/windows-install/)
+- [Verify Windows requeirements](https://docs.docker.com/desktop/install/windows-install/)
 - Windows 10 64-bit: Home or Pro 21H1 (build 19043) or higher.
 - Enable the WSL 2 feature on Windows.
 - Download Docker Desktop Installer
