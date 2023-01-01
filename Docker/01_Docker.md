@@ -18,9 +18,8 @@
 ## 02. Comandos ejecutados en CMD
 - `docker`: Muestra todas las opciones de docker
 - `docker --version` ó `docker -v` : Versión de docker instalada
-- 
 
 
-## 03. Comandos
-- `docker`: Muestra todas las opciones de docker
-- `docker --version` ó `docker -v` : Versión de docker instalada
+## 03. Comandos de imagenes
+- `docker images`: Muestra un listado completo de todas las imagenes que se han descargado en la máquina.
+- `docker pull [nombre_imagen]` : Versión de docker instalada
