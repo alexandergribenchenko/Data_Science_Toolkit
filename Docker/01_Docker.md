@@ -11,8 +11,12 @@
 - wsl --set-default-version 2
 
 
-## 02. Comandos
+## 02. Comandos ejecutados en CMD
 - `docker`: Muestra todas las opciones de docker
 - `docker --version` ó `docker -v` : Versión de docker instalada
 - 
 
+
+## 03. Comandos
+- `docker`: Muestra todas las opciones de docker
+- `docker --version` ó `docker -v` : Versión de docker instalada
