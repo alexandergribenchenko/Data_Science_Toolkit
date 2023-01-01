@@ -26,7 +26,7 @@
 - `docker image rm [nombre_imagen]:[#_vesion]`: Remover una imagen en específico de docker.
 
 ## 03. Comandos de contenedores
-- `docker create [imagen_base]` ó `docker container create [imagen_base]´: Crea un contenedor con base a una imagen base ya creada.
+- `docker create [imagen_base]` ó `docker container create [imagen_base]`: Crea un contenedor con base a una imagen base ya creada.
 
 ## Bonus: Youtube_commands
 - `shift + .`: +x25% reproducción
