@@ -2,6 +2,7 @@
 
 ## Code Canvas Docker
 - [Code Canvas Docker](https://docs.google.com/presentation/d/1Ajv443VrFU6ks8x-0YY5-cEBpvB_4swAX5_pQSWuYmg/edit#slide=id.g1c9ad9ef6e5_0_6)
+- [Youtube personal docker](https://www.youtube.com/playlist?list=PLrJvjnSL5aF7YtpEFzc6qdLt7y0BdJVyY)
 
 ## 01. Instalación
 - [Verify Windows requeirements](https://docs.docker.com/desktop/install/windows-install/)
