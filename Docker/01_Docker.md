@@ -11,19 +11,8 @@
 - wsl --set-default-version 2
 
 
+## 02. Comandos
+- `docker`: Muestra todas las opciones de docker
+- `docker --version` ó `docker -v` : Versión de docker instalada
+- 
 
-
-
-
-
-
-
-
-## 02. Installation
-- `cd ~` : Ir al directorio raiz (donde por defecto se encuentran los documentos)
-- `cd /` : Ir al directorio raiz (donde esta alojado GIT en el disco)
-- `ls -la` : Enlistar los archivos del directorio actual
-- `cd /d/Github/data_science_C1` : Cambiar de directorio específico
-- `cd /c/X_TCS_Documents/Github/data_science_C1`: Cambiar de directorio específico
-- `cd [foder_name]` : Avanzar un nivel en directorios
-- `cd ..` : Retroceder un nivel en directorios
