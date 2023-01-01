@@ -24,3 +24,8 @@
 - `docker images`: Muestra un listado completo de todas las imagenes que se han descargado en la máquina.
 - `docker pull [nombre_imagen]`: Descarga la ultima versión de la imagen, es decir la que tiene el `TAG` latest.
 - `docker pull [nombre_imagen]:[#_vesion]`: Descarga una versión en específico de la imagen. 
+
+
+## Bonus: Youtube_commands
+- `shift + .`: +x25% reproducción
+- `shift + ,`: -x25% reproducción
