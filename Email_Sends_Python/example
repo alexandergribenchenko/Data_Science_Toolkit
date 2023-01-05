@@ -30,3 +30,30 @@ msg.add_alternative("""\
 with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
     smtp.login(EMAIL_ADDRESS, EMAIL_PASSWORD)
     smtp.send_message(msg)
+
+
+02. Con attach
+
+from email.mime.multipart import MIMEMultipart
+from email.mime.application import MIMEApplication
+from email.mime.text import MIMEText
+import smtplib
+
+# Create a multipart message
+msg = MIMEMultipart()
+msg['Subject'] = Message_subject
+msg['From'] = Message_from
+msg['To'] = Message_to
+
+# Add body to email
+body_part = MIMEText(Message_body, 'plain')
+msg.attach(body_part)
+
+with open(Message_attach_folder_path+Message_attach_file_name,'rb') as file:
+    msg.attach(MIMEApplication(file.read(), Name=Message_attach_file_name))
+    
+with smtplib.SMTP_SSL(smtp_server, smtp_port) as smtp:
+    smtp.login(smtp_username, smtp_password)
+    smtp.send_message(msg)
+#     smtp.sendmail(msg['From'], msg['To'], msg.as_string())
+    smtp.quit()
