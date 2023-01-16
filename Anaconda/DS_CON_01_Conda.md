@@ -19,6 +19,7 @@
 - `conda list`: Listar todas las librerías de conda instaladas (en el ambiente actual)
 - `pip list`: Listar todas las librerías de pip instaladas (en el ambiente actual)
 - `conda env create -f path_archivo.yml`: Crear un nuevo ambiente en conda desde un archivo `.yml`
+- `conda deactivate`: desactivar ambiente actual y volver al ambiente base.
 
 # 03. Instalar o actualizar librerías 
 - `conda install nombre_de_la_libreria`: instalar librería con conda (en el ambiente actual) llamada nombre_de_la_libreria.
