@@ -36,10 +36,12 @@
 - `docker run --name [nombre_que_queremos_dar_al_container] -d [nombre_imagen_base]`: un comando que resume todo el proceso. Descarga la imagen (si es que no existe ya), crea un contenedor a partir de esa imagen y ademas lo inicializa. El comando -d es para que se ejecute en modo `deattached`.
 
 ## 04. `docker run`
-- `docker run --name [imagen_base]` ó `docker container create [imagen_base]`: Crea un contenedor con base a una imagen base ya creada.
+- `docker run --name [imagen_base] --rm -i -t -p [puerto_host]:[puerto_contenedor] [imagen_base]`: Crea un contenedor con base a una imagen base ya creada.
 
-Opciones: 
-- `--rm`: lo incluimos si queremos el el contenedor no persista (que se elimine cuando se deje detenga el contenedor).
+Opciones:
+- `-d: ejecuta en modo deattached, es decir, permite seguir escribiendo cosas en la misma consola sin que haya que parar el contenedor.
+- `--rm`: lo incluimos si queremos el el contenedor no persista (que se elimine cuando se deje detenga el contenedor). Automatically remove the container when it exits.
+- `-i -t`: me permitieron detener con `cmd+c`.
 
 ## Bonus: Youtube_commands
 - `shift + .`: +x25% reproducción
