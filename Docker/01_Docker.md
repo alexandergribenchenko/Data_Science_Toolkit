@@ -38,11 +38,16 @@
 ## 04. `docker run`
 - `docker run --name [imagen_base] --rm -i -t -p [puerto_host]:[puerto_contenedor] -e [nombre_variable_entorno]=[valor_variable_entorno] [imagen_base]`: Crea un contenedor con base a una imagen base ya creada.
 
-Opciones:
-- `-d: ejecuta en modo deattached, es decir, permite seguir escribiendo cosas en la misma consola sin que haya que parar el contenedor.
+#### Opciones:
+- `-d`: ejecuta en modo deattached, es decir, permite seguir escribiendo cosas en la misma consola sin que haya que parar el contenedor.
 - `-e`: variable de entorno.
 - `--rm`: lo incluimos si queremos el el contenedor no persista (que se elimine cuando se deje detenga el contenedor). Automatically remove the container when it exits.
 - `-i -t`: me permitieron detener con `cmd+c`.
+
+#### Ejemplos
+1. `docker run --name notebook --rm -i -t -p 8888:8888 -e TYPE=notebook jorgecardona/jupyter
+2. `docker run --name lab --rm -i -t -p 8888:8888 jorgecardona/jupyter
+
 
 ## Bonus: Youtube_commands
 - `shift + .`: +x25% reproducción
