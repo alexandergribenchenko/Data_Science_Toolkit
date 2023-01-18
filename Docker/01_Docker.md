@@ -42,7 +42,7 @@
 - `-d`: ejecuta en modo deattached, es decir, permite seguir escribiendo cosas en la misma consola sin que haya que parar el contenedor.
 - `-e`: variable de entorno.
 - `--rm`: lo incluimos si queremos el el contenedor no persista (que se elimine cuando se deje detenga el contenedor). Automatically remove the container when it exits.
-- `-i -t`: me permitieron detener con `cmd+c`.
+- `-i -t`: me permitieron detener con `cmd+c`. Tambien permite mostrar el hipervinculo.
 
 #### Ejemplos
 1. `docker run --name notebook --rm -i -t -p 8888:8888 -e TYPE=notebook jorgecardona/jupyter`
