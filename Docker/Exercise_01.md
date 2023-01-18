@@ -2,7 +2,7 @@
 
 # Dockerfile: 
 
-FROM 
+FROM ubuntu:latest
 
 RUN apt update
 RUN apt install python3 -y
@@ -15,7 +15,7 @@ CMD ["python3, "./print.py"]
 
 
 # Python file
-print(
+print('Hello worrld!')
 
 
 
