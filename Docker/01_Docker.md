@@ -45,8 +45,8 @@
 - `-i -t`: me permitieron detener con `cmd+c`.
 
 #### Ejemplos
-1. `docker run --name notebook --rm -i -t -p 8888:8888 -e TYPE=notebook jorgecardona/jupyter
-2. `docker run --name lab --rm -i -t -p 8888:8888 jorgecardona/jupyter
+1. `docker run --name notebook --rm -i -t -p 8888:8888 -e TYPE=notebook jorgecardona/jupyter`
+2. `docker run --name lab --rm -i -t -p 8888:8888 jorgecardona/jupyter`
 
 
 ## Bonus: Youtube_commands
