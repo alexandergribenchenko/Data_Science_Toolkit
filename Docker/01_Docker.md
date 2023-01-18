@@ -35,6 +35,9 @@
 - `docker rm [container_id]` ó `docker rm [container_id]`: remover contenedor a partir de su id o su nombre.
 - `docker run --name [nombre_que_queremos_dar_al_container] -d [nombre_imagen_base]`: un comando que resume todo el proceso. Descarga la imagen (si es que no existe ya), crea un contenedor a partir de esa imagen y ademas lo inicializa. El comando -d es para que se ejecute en modo `deattached`.
 
+## 03. `docker run`
+- `docker create [imagen_base]` ó `docker container create [imagen_base]`: Crea un contenedor con base a una imagen base ya creada.
+- `docker create --name [nombre_que_queremos_dar] [imagen_base]` ó `docker container create --name [nombre_que_queremos_dar] [imagen_base]`: Crea un contenedor con base a una imagen base ya creada.
 
 ## Bonus: Youtube_commands
 - `shift + .`: +x25% reproducción
