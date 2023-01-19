@@ -49,7 +49,8 @@
 2. `docker run --name lab --rm -i -t -p 8888:8888 jorgecardona/jupyter`
 
 ## 05. `docker build`
-`docker build -t [nombre_que_queremos_dar_al_container] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`
+- `docker build -t [nombre_que_queremos_dar_al_container] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`: construir una imagen a partir de un dockerfile.
+- docker run y corremos la imagen del docker
 
 ## Bonus: Youtube_commands
 - `shift + .`: +x25% reproducción
