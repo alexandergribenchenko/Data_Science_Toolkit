@@ -14,11 +14,11 @@
 - Proceder con la instalación (opciones por defecto)
 - wsl --set-default-version 2
 
-## 01. Comandos generales
+## 01. Docker - Comandos generales
 - `docker`: Muestra todas las opciones de docker
 - `docker --version` ó `docker -v` : Versión de docker instalada
 
-## 02. Comandos de imagenes
+## 02. Docker - Comandos de imagenes
 - [dockerhub](https://hub.docker.com/) es el repositorio oficial donde se encuentrán las imagenes de docker.
 - `docker images`: Muestra un listado completo de todas las imagenes que se han descargado en la máquina.
 - `docker pull [nombre_imagen]`: Descargar la última versión de la imagen, es decir la que tiene el `TAG` latest. Ejemplo: `docker pull mysql`
