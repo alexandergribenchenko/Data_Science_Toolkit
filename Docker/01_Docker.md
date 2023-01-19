@@ -1,6 +1,6 @@
 # DOCKER: CHEATSHEET PROPIO
 
-# Introducc
+# Introducción
 ## A. Code Canvas Docker
 - [Code Canvas Docker](https://docs.google.com/presentation/d/1Ajv443VrFU6ks8x-0YY5-cEBpvB_4swAX5_pQSWuYmg/edit#slide=id.g1c9ad9ef6e5_0_6)
 - [Youtube personal docker](https://www.youtube.com/playlist?list=PLrJvjnSL5aF7YtpEFzc6qdLt7y0BdJVyY)
@@ -30,7 +30,7 @@
 #### Crear una imagen a partir de un Dockerfile: `docker build`
 - `docker build -t [nombre_que_queremos_dar_al_container] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`: construir una imagen a partir de un dockerfile.
 
-## 03. Docker - Comandos de contenedores
+## 03. Docker - Comandos de contenedores: general
 #### Enlistar contenedores
 - `docker ps`: enlista todos los contenedores se encuntren activos.
 - `docker ps -a`: enlista todos los contenedores se encuntren activos o no (esto se evalua en la columna `STATUS`).
@@ -41,13 +41,17 @@
 #### Iniciar o detener contenedores
 - `docker start [container_id]` ó `docker start [container_id]`: ejecutar contenedor a partir de su id o su nombre.
 - `docker stop [container_id]` ó `docker stop [container_id]`: detener contenedor a partir de su id o su nombre.
+#### Acceder al interior de los contenedores en ejecución
+- `docker exec -it [container_que_deseamos_correr] [opcion de consola:ejemplo en ubuntu /bin/bash]`: entrar por consola a un container que ya esta corriendo.
+- `docker run -it [nombre_de_la_imagen] [opcion de consola:ejemplo en ubuntu /bin/bash]`: correr en modo interactivo entrando en la consola dentro del container.
+
+## 04. Docker - Comandos de contenedores: `docker run`
+
 #### Descargar imagen + Crear contenedor + Iniciar Contenedor: `docker run`
 - `docker run --name [nombre_que_queremos_dar_al_container] -d [nombre_imagen_base]`: un comando que resume todo el proceso. Descarga la imagen (si es que no existe ya), crea un contenedor a partir de esa imagen y ademas lo inicializa. El comando -d es para que se ejecute en modo `deattached`.
-
-## 04. `docker run`
 - `docker run --name [nombre_que_queremos_dar_al_container] --rm -i -t -p [puerto_host]:[puerto_contenedor] -e [nombre_variable_entorno]=[valor_variable_entorno] [imagen_base]`: Crea un contenedor con base a una imagen base ya creada.
 
-#### Opciones:
+#### Opciones de docker run:
 - `-d`: ejecuta en modo deattached, es decir, permite seguir escribiendo cosas en la misma consola sin que haya que parar el contenedor.
 - `-e`: variable de entorno.
 - `--rm`: lo incluimos si queremos el el contenedor no persista (que se elimine cuando se deje detenga el contenedor). Automatically remove the container when it exits.
@@ -57,10 +61,8 @@
 1. `docker run --name notebook --rm -i -t -p 8888:8888 -e TYPE=notebook jorgecardona/jupyter`
 2. `docker run --name lab --rm -i -t -p 8888:8888 jorgecardona/jupyter`
 
-## 05. `docker build`
 
-- `docker run -it [nombre_de_la_imagen] [opcion de consola:ejemplo en ubuntu /bin/bash]`: correr en modo interactivo entrando en la consola dentro del container.
-- `docker exec -it [container_que_deseamos_correr] [opcion de consola:ejemplo en ubuntu /bin/bash]`: entrar por consola a un container que ya esta corriendo.
+
 
 
 ## Bonus: Youtube_commands
