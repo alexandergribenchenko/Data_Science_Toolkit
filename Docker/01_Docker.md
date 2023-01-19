@@ -46,7 +46,7 @@
 - `docker start [container_id]` ó `docker start [container_id]`: ejecutar contenedor a partir de su id o su nombre.
 - `docker stop [container_id]` ó `docker stop [container_id]`: detener contenedor a partir de su id o su nombre.
 #### Acceder al interior de los contenedores en ejecución
-- `docker exec -it [container_que_deseamos_correr] [opcion de consola:ejemplo en ubuntu /bin/bash]`: entrar por consola a un container que ya esta corriendo.
+- `docker exec -it [container_que_esta_corriendo] [opcion de consola:ejemplo en ubuntu /bin/bash]`: entrar por consola a un container que ya esta corriendo.
 - `docker run -it [nombre_de_la_imagen] [opcion de consola:ejemplo en ubuntu /bin/bash]`: correr en modo interactivo entrando en la consola dentro del container.
 
 # 04. Docker - Comandos de contenedores: `docker run`
