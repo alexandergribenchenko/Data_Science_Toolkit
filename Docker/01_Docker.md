@@ -32,6 +32,8 @@
 - `docker image rm [nombre_imagen]:[#_vesion]`: Remover una imagen en específico de docker.
 #### Crear una imagen a partir de un Dockerfile: `docker build`
 - `docker build -t [nombre_que_queremos_dar_al_container] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`: construir una imagen a partir de un dockerfile.
+#### Crear una imagen a partir de un container: `docker commit`
+- `docker commit -t [nombre_del_container] [nombre_imagen_que_deseamos_crear]`: construir una imagen a partir de un container.
 
 # 03. Docker - Comandos de contenedores: general
 
