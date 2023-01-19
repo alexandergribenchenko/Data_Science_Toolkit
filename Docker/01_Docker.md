@@ -22,7 +22,6 @@
 - `docker --version` ó `docker -v` : Versión de docker instalada
 
 # 02. Docker - Comandos de imagenes
-
 - [dockerhub](https://hub.docker.com/) es el repositorio oficial donde se encuentrán las imagenes de docker.
 #### Enlistar imagenes
 - `docker images`: Muestra un listado completo de todas las imagenes que se han descargado en la máquina.
@@ -68,7 +67,20 @@
 2. `docker run --name lab --rm -i -t -p 8888:8888 jorgecardona/jupyter`
 
 
-# 05. Docker - Dockerfile
+# 05. Docker - Dockerfile: `docker build`
+
+Si ejecutamos`docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`obtendremos:
+Ejemplo: `docker build -t imagen_dockerfile .`
+Posteriormente: `docker run --rm -ti imagen_dockerfile` 
+o de manera conjunta: `docker build -t imagen_dockerfile . && docker run --rm -ti imagen_dockerfile`
+
+#### Sentencia 01. FROM: Crear una imagen (dockerfile vs console)
+- Si el docker file contiene: `FROM ubuntu:10.04`
+- Analogo a ejecutar: `docker pull ubuntu:10.04`
+
+#### Sentencia 02. COPY: Copiar archivos al interior del container (dockerfile vs console)
+- Si el docker file contiene: `COPY [folder_host] [folder_container]` ejemplo `COPY app_host /app_cont`
+El el punto de origen del container se toma como su raiz y el punto de origen del host se encuentra al mismo nivel que el Dockerfile.
 
 
 
