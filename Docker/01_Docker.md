@@ -48,6 +48,8 @@
 1. `docker run --name notebook --rm -i -t -p 8888:8888 -e TYPE=notebook jorgecardona/jupyter`
 2. `docker run --name lab --rm -i -t -p 8888:8888 jorgecardona/jupyter`
 
+## 04. `docker build`
+`docker build -t [nombre_que_queremos_dar_al_container] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]
 
 ## Bonus: Youtube_commands
 - `shift + .`: +x25% reproducción
