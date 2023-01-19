@@ -50,7 +50,8 @@
 
 ## 05. `docker build`
 - `docker build -t [nombre_que_queremos_dar_al_container] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`: construir una imagen a partir de un dockerfile.
-- docker run y corremos la imagen del docker
+- `docker run -it [container_que_deseamos_correr] [opcion de consola:ejemplo en ubuntu /bin/bash]`: correr en modo interactivo entrando en la consola dentro del container.
+
 
 ## Bonus: Youtube_commands
 - `shift + .`: +x25% reproducción
