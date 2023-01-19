@@ -33,6 +33,8 @@ Ejemplos: `conda install jupyterlab` y `conda install -c conda-forge prophet`.
 - `(env_01_finanzas) C:\Users\Fiodor>D:`: Cambiar entre discos duros en el terminal
 
 
+# 05. Enlaces
+https://es.stackoverflow.com/questions/124929/conda-no-se-reconoce-como-un-comando-interno-o-externo-programa-o-archivo-por
 
 
 
