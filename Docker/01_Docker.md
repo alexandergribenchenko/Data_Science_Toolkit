@@ -78,9 +78,11 @@ o de manera conjunta: `docker build -t imagen_dockerfile . && docker run --rm -t
 - Si el docker file contiene: `FROM ubuntu:10.04`
 - Analogo a ejecutar: `docker pull ubuntu:10.04`
 
-#### Sentencia 02. COPY: Copiar archivos al interior del container (dockerfile vs console)
-- Si el docker file contiene: `COPY [folder_host] [folder_container]` ejemplo `COPY app_host /app_cont`
+#### Sentencia 02. COPY: Copiar archivos al interior del container
+- Si el docker file contiene: `COPY [ruta_host] [ruta_container]` ejemplo `COPY app_host /app_cont`
+Se hace una copia de los archivos que estan en la ruta_host a la ruta_container.
 El el punto de origen del container se toma como su raiz y el punto de origen del host se encuentra al mismo nivel que el Dockerfile.
 
 
-
+# Bonus Linux
+Para imprimir un archivo en la linea de comando (o concatenarlo) empleo la función `cat [nomnre_archivo]`
