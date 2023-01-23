@@ -95,4 +95,4 @@ El el punto de origen del container se toma como su raiz y el punto de origen de
 
 
 # Bonus Linux
-Para imprimir un archivo en la linea de comando (o concatenarlo) empleo la función `cat [nomnre_archivo]`
+- Para imprimir un archivo en la linea de comando (o concatenarlo) empleo la función `cat [nomnre_archivo]`
