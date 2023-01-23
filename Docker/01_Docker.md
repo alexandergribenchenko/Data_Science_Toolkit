@@ -94,6 +94,9 @@ El el punto de origen del container se toma como su raiz y el punto de origen de
 #### Sentencia 05. CMD: sentencia que se ejecuta una vez el container se inicializa
 - `CMD [sentencia_a_ejecutar]`: por ejemplo `CMD python`.
 
+# XXX Experimento docker: 
+- `docker run -i -t -p 8888:8888 -v "PWD":/home --name anaconda3_cpsc322 continuumio/anaconda3:2020.11`
+- `jupyter-lab --ip='0.0.0.0' --port=8888 --no-browser --allow-root --notebook-dir=/home`
 
 # Bonus Linux
 - Para imprimir un archivo en la linea de comando (o concatenarlo) empleo la función `cat [nomnre_archivo]`
