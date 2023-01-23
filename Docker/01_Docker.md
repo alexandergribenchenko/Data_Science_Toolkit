@@ -76,7 +76,7 @@ Ejemplo: `docker build -t imagen_dockerfile .`
 Posteriormente: `docker run --rm -ti imagen_dockerfile` 
 o de manera conjunta: `docker build -t imagen_dockerfile . && docker run --rm -ti imagen_dockerfile`
 
-#### Sentencia 01. FROM: Crear una imagen (dockerfile vs console)
+#### Sentencia 01. FROM: Toma una imagen como base sobre la que se va a construir (dockerfile vs console)
 - Si el docker file contiene: `FROM ubuntu:10.04`
 - Analogo a ejecutar: `docker pull ubuntu:10.04`
 
