@@ -91,7 +91,8 @@ El el punto de origen del container se toma como su raiz y el punto de origen de
 #### Sentencia 04. RUN: ejecutar sentencias al interior del container en la ruta en el WORKDIR
 - `RUN [Sentencias_a ejecutar]` ejemplo `RUN pip install --upgrade pip &&\ pip install -r requirements.txt`
 
-
+#### Sentencia 04. CMD: sentencia que se ejecuta una vez el container se inicializa
+- `CMD [sentencia_a_ejecutar]`: por ejemplo `CMD python`.
 
 
 # Bonus Linux
