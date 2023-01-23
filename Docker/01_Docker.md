@@ -112,7 +112,7 @@ RUN conda install \
     jupyterlab
 CMD ["jupyter-lab","--ip=0.0.0.0","--no-browser","--allow-root", "--notebook-dir=/home"]
 ```
-- **Comando 01:** `docker build -t img_jupyter . 
+- **Comando 01:** `docker build -t img_jupyter` 
 - **Comando 02:** `docker run --rm -it -p 8888:8888 img_jupyter`
 
 
