@@ -83,6 +83,14 @@ o de manera conjunta: `docker build -t imagen_dockerfile . && docker run --rm -t
 Se hace una copia de los archivos que estan en la ruta_host a la ruta_container.
 El el punto de origen del container se toma como su raiz y el punto de origen del host se encuentra al mismo nivel que el Dockerfile.
 
+#### Sentencia 03. WORKDIR: Establecer direcrtorio de trabajo al interior del container
+- Situa el directorio de trabajo al interior del container en la ruta que se especifique: `WORKDIR [ruta_especificada].
+
+#### Sentencia 04. RUN: ejecutar sentencias al interior del container en la ruta en el WORKDIR
+- `RUN [Sentencias_a ejecutar]` ejemplo `RUN pip install --upgrade pip &&\ pip install -r requirements.txt`
+
+
+
 
 # Bonus Linux
 Para imprimir un archivo en la linea de comando (o concatenarlo) empleo la función `cat [nomnre_archivo]`
