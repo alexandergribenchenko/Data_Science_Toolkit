@@ -101,7 +101,7 @@ El el punto de origen del container se toma como su raiz y el punto de origen de
 
 #### Experimento 02. 
 
-``` docker
+``` python
 FROM continuumio/miniconda3:4.10.3p1
 RUN conda install \
     xarray \ 
