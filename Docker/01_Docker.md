@@ -95,8 +95,35 @@ El el punto de origen del container se toma como su raiz y el punto de origen de
 - `CMD [sentencia_a_ejecutar]`: por ejemplo `CMD python`.
 
 # XXX Experimento docker: 
+#### Experimento 01.
 - `docker run -i -t -p 8888:8888 -v "PWD":/home --name anaconda3_cpsc322 continuumio/anaconda3:2020.11`
 - `jupyter-lab --ip='0.0.0.0' --port=8888 --no-browser --allow-root --notebook-dir=/home`
+
+#### Experimento 02. 
+
+``` python
+var add2 = function(number) {
+  return number + 2;
+}
+```
+
+
+Dockerfile: 
+"""FROM continuumio/miniconda3:4.10.3p1
+RUN conda install \
+    xarray \ 
+    netCDF4 \ 
+    bottleneck \
+    numpy \
+    pandas \
+    matplotlib \
+    jupyterlab
+CMD ["jupyter-lab","--ip=0.0.0.0","--no-browser","--allow-root", "--notebook-dir=/home"]"""
+
+
+
+
+
 
 # Bonus Linux
 - Para imprimir un archivo en la linea de comando (o concatenarlo) empleo la función `cat [nomnre_archivo]`
