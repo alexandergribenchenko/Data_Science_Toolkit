@@ -101,10 +101,17 @@ El el punto de origen del container se toma como su raiz y el punto de origen de
 
 #### Experimento 02. 
 
-``` python
-var add2 = function(number) {
-  return number + 2;
-}
+``` docker
+FROM continuumio/miniconda3:4.10.3p1
+RUN conda install \
+    xarray \ 
+    netCDF4 \ 
+    bottleneck \
+    numpy \
+    pandas \
+    matplotlib \
+    jupyterlab
+CMD ["jupyter-lab","--ip=0.0.0.0","--no-browser","--allow-root", "--notebook-dir=/home"]
 ```
 
 
