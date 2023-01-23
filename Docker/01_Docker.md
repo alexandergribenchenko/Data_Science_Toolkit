@@ -20,6 +20,7 @@
 
 - `docker`: Muestra todas las opciones de docker
 - `docker --version` ó `docker -v` : Versión de docker instalada
+- `docker system prune -a`: borra los containers, imagenes que no esten activos.
 
 # 02. Docker - Comandos de imagenes
 - [dockerhub](https://hub.docker.com/) es el repositorio oficial donde se encuentrán las imagenes de docker.
@@ -39,6 +40,7 @@
 #### Enlistar contenedores
 - `docker ps`: enlista todos los contenedores se encuntren activos.
 - `docker ps -a`: enlista todos los contenedores se encuntren activos o no (esto se evalua en la columna `STATUS`).
+
 #### Crear o eliminar contenedores
 - `docker create [imagen_base]` ó `docker container create [imagen_base]`: Crea un contenedor con base a una imagen base ya creada.
 - `docker create --name [nombre_que_queremos_dar] [imagen_base]` ó `docker container create --name [nombre_que_queremos_dar] [imagen_base]`: Crea un contenedor con base a una imagen base ya creada.
