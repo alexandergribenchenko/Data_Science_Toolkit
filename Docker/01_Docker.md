@@ -100,7 +100,6 @@ El el punto de origen del container se toma como su raiz y el punto de origen de
 - `jupyter-lab --ip='0.0.0.0' --port=8888 --no-browser --allow-root --notebook-dir=/home`
 
 #### Experimento 02. 
-
 ``` python
 FROM continuumio/miniconda3:4.10.3p1
 RUN conda install \
@@ -113,19 +112,9 @@ RUN conda install \
     jupyterlab
 CMD ["jupyter-lab","--ip=0.0.0.0","--no-browser","--allow-root", "--notebook-dir=/home"]
 ```
+- **Comando 01:** `docker build -t img_jupyter . 
+- **Comando 02:** `docker run --rm -it -p 8888:8888 img_jupyter`
 
-
-Dockerfile: 
-"""FROM continuumio/miniconda3:4.10.3p1
-RUN conda install \
-    xarray \ 
-    netCDF4 \ 
-    bottleneck \
-    numpy \
-    pandas \
-    matplotlib \
-    jupyterlab
-CMD ["jupyter-lab","--ip=0.0.0.0","--no-browser","--allow-root", "--notebook-dir=/home"]"""
 
 
 
