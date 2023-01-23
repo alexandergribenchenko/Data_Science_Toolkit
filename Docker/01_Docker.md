@@ -115,7 +115,20 @@ CMD ["jupyter-lab","--ip=0.0.0.0","--no-browser","--allow-root", "--notebook-dir
 - **Comando 01:** `docker build -t img_jupyter .` 
 - **Comando 02:** `docker run --rm -it -p 8888:8888 img_jupyter`
 
+#### Experimento 03. Propio.
+``` python
+FROM continuumio/anaconda3
 
+COPY app_host /app_cont
+
+WORKDIR /app_cont
+
+RUN pip install -r requirements.txt
+
+CMD ["jupyter-lab","--ip=0.0.0.0","--no-browser","--allow-root", "--notebook-dir=/app_cont"]
+```
+- **Comando 01:** `docker build -t img_jupyter .` 
+- **Comando 02:** `docker run --rm -it -p 8888:8888 img_jupyter`
 
 
 
