@@ -130,6 +130,8 @@ CMD ["jupyter-lab","--ip=0.0.0.0", "--port=5000","--no-browser","--allow-root", 
 - **Comando 01:** `docker build -t img_jupyter .` 
 - **Comando 02:** `docker run --rm -it -p 8888:5000 img_jupyter`
 
+# 06. Docker - docker-compose
+
 
 
 
