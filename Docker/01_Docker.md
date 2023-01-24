@@ -130,8 +130,77 @@ CMD ["jupyter-lab","--ip=0.0.0.0", "--port=5000","--no-browser","--allow-root", 
 - **Comando 01:** `docker build -t img_jupyter .` 
 - **Comando 02:** `docker run --rm -it -p 8888:5000 img_jupyter`
 
-# 06. Docker - docker-compose
 
+# 06. Docker - docker-compose
+#### Experimento 01. docker-compose.
+``` python
+version: '3.8'
+
+services:
+
+  jupyter:
+    build: ./jupyter
+    restart: unless-stopped
+    ports:
+      - "8200:8888"
+    entrypoint:
+      jupyter lab --ip='0.0.0.0' --port=8888 --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password=''
+    volumes: 
+      - ./jupyter:/app
+    env_file: 
+      - ./jupyter/variables.env
+```
+- **Comando 01:** docker-compose up -d
+- **Comando 02:** docker-compose down
+
+#### Experimento 02. docker-compose.
+``` python
+version: '3.8'
+
+services:
+
+  jupyter:
+    build: ./jupyter
+    restart: unless-stopped
+    ports:
+      - "8200:8888"
+    entrypoint:
+      jupyter lab --ip='0.0.0.0' --port=8888 --no-browser --allow-root --NotebookApp.token='' --NotebookApp.password=''
+    volumes: 
+      - ./jupyter:/app
+    env_file: 
+      - ./jupyter/variables.env
+
+  postgresql:
+    image: "postgres:14"
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: test
+      POSTGRES_USER: itguymichal
+      POSTGRES_PASSWORD: admin
+      PGDATA: /var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  pgadmin:
+    image: "dpage/pgadmin4:latest"
+    restart: unless-stopped
+    ports: 
+      - "8000:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@example.com
+      PGADMIN_DEFAULT_PASSWORD: p4ssw0rd
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+      
+volumes:
+  db-data:
+  pgadmin-data:
+```
+- **Comando 01:** docker-compose up -d
+- **Comando 02:** docker-compose down
 
 
 
