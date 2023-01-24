@@ -132,6 +132,7 @@ CMD ["jupyter-lab","--ip=0.0.0.0", "--port=5000","--no-browser","--allow-root", 
 
 
 # 06. Docker - docker-compose
+- Link versiones: [Compose file versions and upgrading](https://docs.docker.com/compose/compose-file/compose-versioning/)
 #### Experimento 01. docker-compose.
 ``` python
 version: '3.8'
