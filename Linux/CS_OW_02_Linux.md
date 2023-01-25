@@ -9,3 +9,6 @@
 - `cd /c/Users/Fiodor/00_Github/MLOps_MVP_01` : Cambiar de directorio específico
 - `cd [foder_name]` : Avanzar un nivel en directorios
 - `cd ..` : Retroceder un nivel en directorios
+
+## Redes
+- `ping localhost`: Conocer la direccion del localhost
