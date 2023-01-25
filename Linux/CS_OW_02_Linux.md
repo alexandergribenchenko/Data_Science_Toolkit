@@ -11,4 +11,4 @@
 - `cd ..` : Retroceder un nivel en directorios
 
 ## Redes
-- `ping localhost`: Conocer la direccion del localhost
+- `ping localhost`: Conocer la direccion del localhost, comunmente 127.0.0.1
