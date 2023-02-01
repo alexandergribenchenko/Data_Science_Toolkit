@@ -1,5 +1,12 @@
 # Cheatsheet PostgreSQL
 
+## Query 01.
+```sql
+SELECT *
+FROM currencyrate
+```
+
+## Query 02.
 ```sql
 DROP TABLE IF EXISTS countryregioncurrency, currencyrate;
 
@@ -26,4 +33,57 @@ WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
 COPY currencyrate 
 FROM 'C:\Users\User\Downloads\extended_case_3_student\data\csvs\currencyrate.csv'
 WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
+```
+## Query 03.
+```sql
+DROP TABLE IF EXISTS product, productreview;
+
+-- t_03 : product
+CREATE TABLE product (
+productid INTEGER,
+name VARCHAR(50),
+productnumber VARCHAR(25),
+makeflag CHAR(1),
+finishedgoodsflag CHAR(1),
+color VARCHAR(15),
+safetystocklevel INTEGER,
+reorderpoint INTEGER,
+standardcost FLOAT,
+listprice FLOAT,
+size VARCHAR(5),
+sizeunitmeasurecode CHAR(3),
+weightunitmeasurecode CHAR(3),
+weight FLOAT,
+daystomanufacture INTEGER,
+productline CHAR(2),
+class CHAR(2),
+style CHAR(2),
+productsubcategoryid INTEGER,
+productmodelid INTEGER,
+sellstartdate DATE,
+sellenddate DATE,
+discontinueddate DATE,
+rowguidcol TEXT,
+modifieddate DATE
+);
+
+-- t_07 : productreview
+CREATE TABLE productreview (
+productreviewid INTEGER,
+productid INTEGER,
+reviewername VARCHAR(50),
+reviewdate DATE,
+emailaddress VARCHAR(50),
+rating INTEGER,
+comments VARCHAR(3850),
+modifieddate DATE
+);
+
+COPY product 
+FROM 'C:\Users\User\Downloads\extended_case_3_student\data\csvs\product.csv'
+WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',', ENCODING 'UTF8');
+
+COPY productreview 
+FROM 'C:\Users\User\Downloads\extended_case_3_student\data\csvs\productreview.csv'
+WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',', ENCODING 'UTF8');
 ```
