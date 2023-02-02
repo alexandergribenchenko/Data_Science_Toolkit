@@ -17,7 +17,7 @@ LIMIT 5
 ```
 
 
-## Query 02.
+## Query 03.
 ```sql
 DROP TABLE IF EXISTS countryregioncurrency, currencyrate;
 
@@ -45,7 +45,7 @@ COPY currencyrate
 FROM 'C:\Users\User\Downloads\extended_case_3_student\data\csvs\currencyrate.csv'
 WITH (FORMAT CSV, HEADER TRUE, DELIMITER ',');
 ```
-## Query 03.
+## Query 04.
 ```sql
 DROP TABLE IF EXISTS product, productreview;
 
