@@ -1,5 +1,10 @@
 # Cheatsheet PostgreSQL
 
+## Query 00.
+```sql
+CREATE DATABASE db_Test;
+```
+
 ## Query 01.
 ```sql
 SELECT *
