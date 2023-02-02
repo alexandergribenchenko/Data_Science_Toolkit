@@ -1,6 +1,7 @@
 # Examples SQL
 
 # Example 01.
+```sql
 SELECT DISTINCT c.customer_id
 FROM customer c, purchase_order po, order_product op, product p, product_category pc
 WHERE c.customer_id=po.customer_id 
@@ -9,8 +10,10 @@ WHERE c.customer_id=po.customer_id
 	  AND p.product_category_id=pc.product_category_id 
 	  AND pc.name IN ('Books', 'Garden')
 ORDER BY c.customer_id
+```
 
 # Example 02.
+```sql
 SELECT DISTINCT PO.customer_id
 FROM PURCHASE_ORDER PO
 INNER JOIN ORDER_PRODUCT OP ON PO.order_id=OP.order_id
@@ -18,6 +21,8 @@ INNER JOIN PRODUCT P ON OP.product_id=P.product_id
 INNER JOIN PRODUCT_CATEGORY PC ON P.product_category_id=PC.product_category_id
 WHERE PC.name IN ('Books', 'Garden')
 ORDER BY PO.customer_id ASC
+```
+
 
 # Example 03.
 ```sql
