@@ -8,6 +8,17 @@ FROM currencyrate
 
 ## Query 02.
 ```sql
+SELECT t_03.productid, t_03.name, ROUND(AVG(t_07.rating),2) AS avg_rating
+FROM product t_03
+INNER JOIN productreview t_07 ON t_03.productid = t_07.productid
+GROUP BY  t_03.productid, t_03.name
+ORDER BY avg_rating DESc
+LIMIT 5
+```
+
+
+## Query 02.
+```sql
 DROP TABLE IF EXISTS countryregioncurrency, currencyrate;
 
 CREATE TABLE countryregioncurrency (
