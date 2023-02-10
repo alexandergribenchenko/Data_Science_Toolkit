@@ -4,7 +4,7 @@ Las Expresiones Comunes Temporales (CTE, por sus siglas en inglés) son una cara
 
 La sintaxis básica para crear una CTE es la siguiente:
 
-´´´sql
+```sql
 WITH cte_name (column1, column2, ...) AS (
   SELECT column1, column2, ...
   FROM table_name
@@ -12,4 +12,4 @@ WITH cte_name (column1, column2, ...) AS (
 )
 SELECT ...
 FROM cte_name
-´´´
+```
