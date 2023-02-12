@@ -1,1 +1,0 @@
-# SQL - General_Functions
