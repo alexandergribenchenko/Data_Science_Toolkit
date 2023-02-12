@@ -1,5 +1,8 @@
 # Cheatsheet PostgreSQL
 
+Enlaces de interes: 
+- [Cómo añadir PostgreSQL a las variables de entorno de Windows 10](https://remot-technologies.com/como-anadir-postgresql-a-las-variables-de-entorno-de-windows-10/)
+
 ## Query 00.
 ```sql
 CREATE DATABASE db_Test;
