@@ -2,7 +2,7 @@
 
 ## ROW_NUMBER()
 
-´´´sql
+```sql
 SELECT ROW_NUMBER() OVER(Partition By Left(LastName, 1) Order BY FirstName),
-´´´    
+```   
 
