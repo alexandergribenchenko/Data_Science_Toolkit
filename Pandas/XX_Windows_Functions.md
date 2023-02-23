@@ -13,6 +13,8 @@ df['fecha'] = df['fecha'].dt.strftime('%Y%m')
 print(df)
 
 
+ventas = pd.Series([10, 5, 8, 12, 7, 9, 6, 11, 10, 8])
+media_movil = ventas.rolling(window=3).mean()
 
 
 
