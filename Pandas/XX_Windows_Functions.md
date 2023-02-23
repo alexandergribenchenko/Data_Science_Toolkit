@@ -18,6 +18,9 @@ media_movil = ventas.rolling(window=3).mean()
 
 
 
+dict_sample = {'fecha': ['202101', '202101', '202102', '202102', '202102', '202102', '202103', '202103', '202103', '202104', '202104', '202104', '202105', '202105', '202105', '202105', '202106', '202106'], 'valor': [5, 0, 61, 27, 26, 74, 61, 91, 27, 88, 43, 76, 2, 61, 83, 96, 29, 69]}
+dict_sample
+
 
 # Calcular la mediana de los valores agregados de los 3 meses anteriores para cada uno de los meses
 df['fecha'] = pd.to_datetime(df['fecha'], format='%Y%m')
