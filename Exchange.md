@@ -1,1 +1,1 @@
-https://event.on24.com/eventRegistration/console/EventConsoleApollo.jsp?simulive=y&eventid=4076678&sessionid=1&username=&partnerref=&format=fhvideo1&mobile=false&flashsupportedmobiledevice=false&helpcenter=false&key=984E1366EE9899F1CC570D7F8D8CD7D4&text_language_id=en&playerwidth=1000&playerheight=650&overwritelobby=y&newConsole=true&nxChe=true&newTabCon=true&consoleEarEventConsole=false&eventuserid=598763029&contenttype=L&mediametricsessionid=512981327&mediametricid=5747950&usercd=598763029&mode=launch
+
