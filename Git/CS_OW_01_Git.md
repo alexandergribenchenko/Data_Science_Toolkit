@@ -27,3 +27,13 @@
 - `git commit -m 'Primer commmit'` : Se genera el commit
 - `git push origin main` : Empujar y sinconizar los archivos de local a github
 - `git pull origin main` : Halar y sinconizar los archivos de github a local
+
+## 04. Git Bash (VIM)
+Los comandos `:wq` y `:q!` son comandos del editor de texto Vim, que es el editor de texto predeterminado utilizado por Git Bash en sistemas operativos como Linux y macOS.
+
+- `:w`: guarda el archivo.
+- `:q`: cierra el archivo.
+- `:q!`: cierra el archivo sin guardar.
+- `:wq`: guarda el archivo y cierra Vim.
+
+Cuando Git Bash muestra el mensaje de confirmación de merge, automáticamente abre Vim para que puedas escribir un mensaje de confirmación. Si estás familiarizado con Vim, puedes editar el mensaje de confirmación utilizando comandos de Vim. Si no estás familiarizado con Vim, puedes usar los comandos que te proporcioné para guardar y salir de la ventana.
