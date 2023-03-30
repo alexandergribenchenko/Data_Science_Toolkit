@@ -1,4 +1,8 @@
 *iGl7Uye0K0
+
+
+https://discord.com/channels/930598675342835782/1078342816104726568
+
 # 
 
 - Crear un readme para el repo del modelo. (que seria el mismo cuerpo del correo a enviar)
