@@ -1,3 +1,22 @@
+Data Scientist, TCS - Tata Consultancy Services, May 2021 - Present
+Evaluation, automation, development and deployment of analytical models for the areas of operations planning and digital marketing associated with the aeronautical industry. Translation of the needs of different business areas to analytical solutions that allow obtaining quantitative and qualitative business insights and improve decision-making.
+- Classification models: Modelos de retrasos en aeropuertos, modelos de predicción de apertura de correos en email marketing
+- Regression Models:
+- Segmentation models: RFM 
+- Recommendation models:
+- Optimization models: : 
+- NLP models: Customer experience
+ Tech Stack: Python, SQL, Spark, Pyspark, Azure (Datalake, Databricks, Datafactory, Machine Learning, DevOps), Power BI, Git, Pytest, Docker, FastAPI.
+
+
+
+
+
+
+
+
+
+
 *iGl7Uye0K0
 
 https://codio.com/home/teacher?tab=0&sDirection=desc&sProp=details.start&filter=&view=0
