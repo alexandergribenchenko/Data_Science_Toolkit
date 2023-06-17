@@ -38,6 +38,12 @@
 7. Opciones restantes por defecto.
 8. Crear rol.
 
+# EC2. Acceder a S3 desde EC2.
+1. Acceder al terminal de la instancia en la que deseamos trabajar.
+2. Actualizar la lista de paquetes disponibles en los repositorios configurados en tu sistema con el comando `sudo apt update`.
+3. Verificar que tenemos el CLI de amazon con `aws --version`. Si no esta instalada instalar con `sudo apt install awscli`. Conformar con `y`para finalizar la instalación.
+4. 
+
 
 
 
