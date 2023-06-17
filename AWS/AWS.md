@@ -10,8 +10,14 @@
 9. Configure storage: 20GB (recordar que free tier va hasta 30).
 10. Crear instnacia y verificar todo ok desde la pestaña lateral izquierda `Instances`. L anueva isntancia debe decir `running`.
 
-
-
+# EC2. Conectar a una instancia desde la nube de AWS
+1. Abrir el servicio de EC2.
+2. Ir a la pestaña lateral izquierda `Instances`.
+3. Seleccionar la instancia de interes.
+4. Dar click en conectar.
+5. Seleccionar EC2 Instance connect.
+6. Conectar. 
+7. Se desplegara la consola donde podemos ejecutar cualquier tipo de comando. Podemos verificar por ejemplo que python se encuentra instalado por defecto ejecutando `python3 --version`.
 
 # S3. Crear Bucket
 1. Abrir el servicio de S3 
