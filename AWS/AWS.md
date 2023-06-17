@@ -1,3 +1,16 @@
+# EC2. Crear una instancia
+1. Abrir el servicio de EC2.
+2. Ir a la pestaña lateral izquierda `Instances`.
+3. Click en `Lounch instances`.
+4. Establecer el `Bucket name` (Es único para dentro del universo de los buckets de AWS): instance-test-c1-de
+5. Elegir el `OS Image` como ubuntu (y la version que este en el free tier).
+6. Elegir el tipo de instancia: t2.micro que es la que esta en el free tier.
+7. Crear nuestra llave de seguridad `Key pair` (dar un nombre, ejemplo key-pair-EC2-test-c1-de, usar el formato `.pem` y las opciones que estan por defecto. Guardar este archivo en nuestro computador local.).
+8. Network settings: crear un grupo de seguridad security-group-EC2-test-c1-de. 
+9. Configure storage: 20GB (recordar que free tier va hasta 30).
+10. Crear instnacia y verificar todo ok desde la pestaña lateral izquierda `Instances`. L anueva isntancia debe decir `running`.
+
+
 
 
 # S3. Crear Bucket
