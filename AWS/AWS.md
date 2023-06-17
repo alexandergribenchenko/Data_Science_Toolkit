@@ -38,11 +38,20 @@
 7. Opciones restantes por defecto.
 8. Crear rol.
 
-# EC2. Acceder a S3 desde EC2.
+# EC2. Escribir archivo desde EC2 hacia S3.
 1. Acceder al terminal de la instancia en la que deseamos trabajar.
 2. Actualizar la lista de paquetes disponibles en los repositorios configurados en tu sistema con el comando `sudo apt update`.
 3. Verificar que tenemos el CLI de amazon con `aws --version`. Si no esta instalada instalar con `sudo apt install awscli`. Conformar con `y`para finalizar la instalación.
-4. 
+4. Vamos a la interfaz grafica de EC2 y seleccionamos nuestra instancia, y damos click en la esquina superioro derecha en acciones>security>Modify IAM role y selecionamos el rol que habiamos creado en IAM, y seleccionamos `update AIM role`.
+5. Cremos una carpeta con el comando `mkdir test_input_folder` e ingresamoa a ella cn `cd test_input_folder`. 
+6. Creemos un archivo al interior de ella con `sudo nano hello.txt`. Recordar guardar en nano con `ctrl O' y calir con `ctrl X`. podemos leer el archivo con `cat hello.txt`
+7. COpiar un archivo puntual que esta en EC2 a S3: `aws s3 cp hello.txt s3://bucket-test-c1-de`.
+8. Sincronizar una carpeta que esta en nuestro EC2 con una carpeta en S3: ´aws s3 sync /home/ubuntu/test_input_folder s3://bucket-test-c1-de/test_syncro_folder`
+
+# EC2. Leer un archivo de S3 desde EC2.
+1. Acceder al terminal de la instancia en la que deseamos trabajar.
+2. Leer los archivos que tenemso en el bucket:`aws s3 ls s3://bucket-test-c1-de`, el ultimo es simplemente el nombre del bucket.
+
 
 
 
