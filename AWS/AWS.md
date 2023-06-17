@@ -46,7 +46,7 @@
 5. Cremos una carpeta con el comando `mkdir test_input_folder` e ingresamoa a ella cn `cd test_input_folder`. 
 6. Creemos un archivo al interior de ella con `sudo nano hello.txt`. Recordar guardar en nano con `ctrl O' y calir con `ctrl X`. podemos leer el archivo con `cat hello.txt`
 7. COpiar un archivo puntual que esta en EC2 a S3: `aws s3 cp hello.txt s3://bucket-test-c1-de`.
-8. Sincronizar una carpeta que esta en nuestro EC2 con una carpeta en S3: ´aws s3 sync /home/ubuntu/test_input_folder s3://bucket-test-c1-de/test_syncro_folder`
+8. Sincronizar una carpeta que esta en nuestro EC2 con una carpeta en S3: `aws s3 sync /home/ubuntu/test_input_folder s3://bucket-test-c1-de/test_syncro_folder`
 
 # EC2. Leer un archivo de S3 desde EC2.
 1. Acceder al terminal de la instancia en la que deseamos trabajar.
