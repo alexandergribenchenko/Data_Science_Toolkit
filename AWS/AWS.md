@@ -52,6 +52,9 @@
 1. Acceder al terminal de la instancia en la que deseamos trabajar.
 2. Leer los archivos que tenemso en el bucket:`aws s3 ls s3://bucket-test-c1-de`, el ultimo es simplemente el nombre del bucket.
 
+# LINUX. 
+1. Descargar un archivo de una URL en especifico: `wget replace_url'.
+2. 
 
 
 
