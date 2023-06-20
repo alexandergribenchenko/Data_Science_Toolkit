@@ -8,6 +8,7 @@ Evaluation, automation, development and deployment of analytical models for the 
 - NLP models: Customer experience
  Tech Stack: Python, SQL, Spark, Pyspark, Azure (Datalake, Databricks, Datafactory, Machine Learning, DevOps), Power BI, Git, Pytest, Docker, FastAPI.
 
+https://customer-academy.databricks.com/learn/user/reset-password/88c6372531bbc6c2d463fd61c6d4d760
 
 
 
