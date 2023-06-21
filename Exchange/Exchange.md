@@ -1,3 +1,8 @@
+lista = ['a', 'b', 'c', float('nan')]
+lista_sin_nan = [elemento for elemento in lista if not isinstance(elemento, float) or not math.isnan(elemento)]
+
+
+
 Data Scientist, TCS - Tata Consultancy Services, May 2021 - Present
 Evaluation, automation, development and deployment of analytical models for the areas of operations planning and digital marketing associated with the aeronautical industry. Translation of the needs of different business areas to analytical solutions that allow obtaining quantitative and qualitative business insights and improve decision-making.
 - Classification models: Modelos de retrasos en aeropuertos, modelos de predicción de apertura de correos en email marketing
