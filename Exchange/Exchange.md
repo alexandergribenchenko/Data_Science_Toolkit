@@ -1,5 +1,5 @@
-lista = ['a', 'b', 'c', float('nan')]
-lista_sin_nan = [elemento for elemento in lista if not isinstance(elemento, float) or not math.isnan(elemento)]
+[lista = ['a', 'b', 'c', float('nan')]
+lista_sin_nan = [elemento for elemento in lista if not isinstance(elemento, float) or not math.isnan(elemento)]](https://wearecommunity.io/communities/techtalksbyepam/videos)
 
 
 
