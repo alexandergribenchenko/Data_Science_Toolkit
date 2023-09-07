@@ -10,6 +10,13 @@
 - Django
 
 ### Herramientas y servicios:
+- BigQuery
 - Docker
 - AKS (Azure Kubernetes Services)
 - ACI (Azure Cointainer Instnaces)
+
+# 02. Data Science. 
+- Hypotesis testing
+- Unitary testing
+- Transformadores y Estimadores en paralelo (Sklearn y Pyspark)
+
