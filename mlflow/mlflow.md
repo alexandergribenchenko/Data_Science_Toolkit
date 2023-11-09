@@ -44,6 +44,18 @@
 }
 
 ```
+- Response único dato:
+```python
+{
+  "predictions": [
+    5.343644383858527,
+    5.517806023434062,
+    5.406008491177671
+  ]
+}
+```
+
+
 
 - Request multiples datos (3 muestras)
 ```python
