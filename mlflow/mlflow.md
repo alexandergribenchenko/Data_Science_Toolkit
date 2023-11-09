@@ -8,7 +8,44 @@
 
 
 # Experimento wine
-- Request
+- Request unico dato
+```python
+{
+  "dataframe_split": {
+    "columns": [
+      "fixed acidity",
+      "volatile acidity",
+      "citric acid",
+      "residual sugar",
+      "chlorides",
+      "free sulfur dioxide",
+      "total sulfur dioxide",
+      "density",
+      "pH",
+      "sulphates",
+      "alcohol"
+    ],
+    "data": [
+      [
+        7.4,
+        0.7,
+        0.0,
+        1.9,
+        0.076,
+        11.0,
+        34.0,
+        0.9978,
+        3.51,
+        0.56,
+        9.4
+      ]
+    ]
+  }
+}
+
+```
+
+- Request multiples datos (3 muestras)
 ```python
 {
   "dataframe_split": {
