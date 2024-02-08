@@ -1,5 +1,11 @@
 # CHEATSHEET ANACONDA
 
+# 00. Varibles de entorno
+
+- Utilizado para conda
+- (Utilizado para python)[https://github.com/Blank-c/Blank-Grabber/issues/152]
+
+
 # 01. Acciones generales de conda
 - `conda info` : Entrega toda la información de conda (en particular las rutas donde fue instalado. Por defecto queda instalada en  `active env location : C:\ProgramData\Anaconda3`).
 - `conda --version` ó `conda -V : Conocer la versión de conda
