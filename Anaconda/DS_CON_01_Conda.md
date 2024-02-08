@@ -2,7 +2,7 @@
 
 # 00. Varibles de entorno
 
-- Utilizado para conda
+- [Utilizado para conda](https://stackoverflow.com/questions/44515769/conda-is-not-recognized-as-internal-or-external-command)
 - [Utilizado para python](https://github.com/Blank-c/Blank-Grabber/issues/152)
 
 
