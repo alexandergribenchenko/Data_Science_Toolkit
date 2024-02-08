@@ -3,7 +3,7 @@
 # 00. Varibles de entorno
 
 - Utilizado para conda
-- (Utilizado para python)[https://github.com/Blank-c/Blank-Grabber/issues/152]
+- [Utilizado para python](https://github.com/Blank-c/Blank-Grabber/issues/152)
 
 
 # 01. Acciones generales de conda
