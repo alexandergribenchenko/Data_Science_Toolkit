@@ -7,6 +7,7 @@
 
 # Request
 - http://localhost:8000/?cl=50&cd=12&fl=200
+- http://localhost:8000/docs
 
 # Dudas
 - Diferencias entre `pkl` file y `dill`file. Parece que tiene algunas ventajas respecto al clasico `pkl`.
