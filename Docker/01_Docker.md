@@ -30,6 +30,8 @@
 - `docker system prune -a`: borra los containers, imagenes que no esten activos.
 
 # 02. Docker - Comandos de imagenes
+**Nota**: Para poder ejecutar los siguientes comando docker desktop debe estar abierto y estarse ejecutando en la maquina host, sino los comandos retornaran error.
+
 - [dockerhub](https://hub.docker.com/) es el repositorio oficial donde se encuentrán las imagenes de docker.
 #### Enlistar imagenes
 - `docker images`: Muestra un listado completo de todas las imagenes que se han descargado en la máquina.
