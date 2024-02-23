@@ -16,6 +16,13 @@
 - Proceder con la instalación (opciones por defecto)
 - wsl --set-default-version 2
 
+## C. Glosario. 
+- Imagen:
+- Contenedor:
+- Docker file:
+- Docker compose:
+
+
 # 01. Docker - Comandos generales
 
 - `docker`: Muestra todas las opciones de docker
