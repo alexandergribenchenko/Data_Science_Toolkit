@@ -65,7 +65,7 @@
 
 # 04. Docker - Comandos de contenedores: `docker run`
 - `docker run [nombre_imagen_base:tag]`: un comando que resume todo el proceso. 
-
+- `docker run -d -t [nombre_imagen_base:tag]`: levanta el contenedor y lo deja corriendo en modo deatach (running in the background), lo que permite que el contenedor siga corriendo, aunque regremos a la consola principal.
 
 #### Descargar imagen + Crear contenedor + Iniciar Contenedor: `docker run`
 - `docker run --name [nombre_que_queremos_dar_al_container] -d [nombre_imagen_base]`: un comando que resume todo el proceso. Descarga la imagen (si es que no existe ya), crea un contenedor a partir de esa imagen y ademas lo inicializa. El comando -d es para que se ejecute en modo `deattached`.
