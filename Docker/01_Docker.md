@@ -29,6 +29,7 @@
 - `docker --version` ó `docker -v` : Versión de docker instalada.
 - `docker info`: Detalle de la version y configuración de docker
 - `docker system prune -a`: borra los containers, imagenes que no esten activos.
+- `docker container prune -f`: borra todos los contenedores que no esten activos.
 
 # 02. Docker - Comandos de imagenes
 **Nota**: Para poder ejecutar los siguientes comando docker desktop debe estar abierto y estarse ejecutando en la maquina host, sino los comandos retornaran error.
