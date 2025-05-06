@@ -1,5 +1,11 @@
 # DOCKER: CHEATSHEET PROPIO
 
+- `docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel] && docker run --rm -ti [nombre_que_queremos_dar_a_la_imagen] sh`: ejemplo.
+- `docker build -t image_example . && docker run --rm -ti image_example sh`: ejemplo.
+
+
+
+
 # Introducción
 ## A. Code Canvas Docker
 - [Code Canvas Docker](https://docs.google.com/presentation/d/1Ajv443VrFU6ks8x-0YY5-cEBpvB_4swAX5_pQSWuYmg/edit#slide=id.g1c9ad9ef6e5_0_6)
