@@ -83,7 +83,7 @@
 #### Ejemplos de `docker run`
 1. `docker run --name notebook --rm -i -t -p 8888:8888 -e TYPE=notebook jorgecardona/jupyter`
 2. `docker run --name lab --rm -i -t -p 8888:8888 jorgecardona/jupyter`
-
+3. `docker run --rm -ti [nombre de la imagen]`: Para un caso en el que queremos desplegar el contenedor pero que no persista y que una vez lo paremos se borre.
 
 # 05. Docker - Dockerfile: `docker build`
 
