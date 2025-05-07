@@ -28,7 +28,6 @@
 - Docker file:
 - Docker compose:
 
-
 # 01. Docker - Comandos generales
 - `docker`: Muestra todas las opciones de docker
 - `docker --version` ó `docker -v` : Versión de docker instalada.
@@ -61,7 +60,8 @@
 - `docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`: construir una imagen a partir de un dockerfile.
     * Ejemplo: `docker build -t imagen_a_crear:tag_a_crear`.
 #### Crear una imagen a partir de un container: `docker commit`
-- `docker commit -t [nombre_del_container] [nombre_imagen_que_deseamos_crear]`: construir una imagen a partir de un container.
+- `docker commit [nombre_del_container] [nombre_imagen_que_deseamos_crear:tag_que_deseamos_asignar]`: construir una imagen a partir de un container.
+   * Ejemplo: `docker commit poc_container image_from_container:tag_propio`.
 
 # 03. Docker - Comandos de contenedores: general
 
