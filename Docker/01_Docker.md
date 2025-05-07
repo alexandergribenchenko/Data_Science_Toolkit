@@ -46,9 +46,9 @@
 
 #### Descargar imagenes de dockerhub
 - `docker pull [nombre_imagen]`: Descargar la última versión de la imagen, es decir la que tiene el `TAG` latest.
-* Ejemplo: `docker pull mysql`
+    * Ejemplo: `docker pull mysql`
 - `docker pull [nombre_imagen]:[tag]`: Descargar una versión en específico de la imagen.
-* Ejemplo: `docker pull mysql:8-oraclelinux8` donde el `tag` es `8-oraclelinux8`.
+    * Ejemplo: `docker pull mysql:8-oraclelinux8` donde el `tag` es `8-oraclelinux8`.
 
 #### Eliminar imagenes
 - `docker image rm [nombre_imagen]:[#_vesion]`: Remover una imagen en específico de docker.
