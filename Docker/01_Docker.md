@@ -53,6 +53,12 @@
 - `docker image rmi [nombre_imagen]:[#_vesion]`: Remover una imagen en específico de docker.
     * Ejemplo: `docker rm mysql:8-oraclelinux8`
 - `docker image prune -a -f`: borra todas las imagenes no usadas por ningun contenedor.
+   * Opciones: 
+      - `-a`: Elimina todas las imágenes no usadas por ningún contenedor, no solo las imágenes "dangling" (huérfanas sin etiquetas).
+      - `-f`: Ejecuta el comando sin pedir confirmación.
+
+
+
 
 
 #### Crear una imagen a partir de un Dockerfile: `docker build`
