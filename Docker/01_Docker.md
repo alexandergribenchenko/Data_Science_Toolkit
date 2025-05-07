@@ -111,10 +111,14 @@
 5. `docker run --name notebook --rm -i -t -p 8888:8888 -e TYPE=notebook jorgecardona/jupyter`
 6. `docker run --name lab --rm -i -t -p 8888:8888 jorgecardona/jupyter`
 
-# 04. Docker - Dockerfile: `docker build`
 
-Si ejecutamos`docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`obtendremos:
-Ejemplo: `docker build -t imagen_dockerfile .`
+# 04. Docker - Comandos Dockerfile
+
+#### `docker build`: Crear una imagen a partir de un Dockerfile 
+- `docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`:
+   * Ejemplo: `docker build -t imagen_dockerfile .`
+
+
 Posteriormente: `docker run --rm -ti imagen_dockerfile` 
 o de manera conjunta: `docker build -t imagen_dockerfile . && docker run --rm -ti imagen_dockerfile`
 
