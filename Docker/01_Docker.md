@@ -90,7 +90,7 @@
 
 ## 03.02. Docker - Comandos de contenedores: `docker run = docker pull + docker create + docker start`
 
-####`docker run`: Descargar imagen + Crear contenedor + Iniciar Contenedor: 
+#### `docker run`: Descargar imagen + Crear contenedor + Iniciar Contenedor: 
 - `docker run [nombre_imagen_base:tag]`: un comando que resume todo el proceso.
     * Ejemplo: `docker run python:3.10-slim`.
    * Opciones: 
