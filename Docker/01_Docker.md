@@ -43,10 +43,14 @@
 - [dockerhub](https://hub.docker.com/) es el repositorio oficial donde se encuentrán las imagenes de docker.
 #### Enlistar imagenes
 - `docker images`: Muestra un listado completo de todas las imagenes que se han descargado en la máquina.
-#### Descargar o eliminar imagenes
+
+#### Descargar imagenes
 - `docker pull [nombre_imagen]`: Descargar la última versión de la imagen, es decir la que tiene el `TAG` latest. Ejemplo: `docker pull mysql`
 - `docker pull [nombre_imagen]:[tag]`: Descargar una versión en específico de la imagen. Ejemplo: `docker pull mysql:8-oraclelinux8` donde el `tag` es `8-oraclelinux8`.
+
+#### Eliminar imagenes
 - `docker image rm [nombre_imagen]:[#_vesion]`: Remover una imagen en específico de docker.
+
 #### Crear una imagen a partir de un Dockerfile: `docker build`
 - `docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`: construir una imagen a partir de un dockerfile.
 #### Crear una imagen a partir de un container: `docker commit`
