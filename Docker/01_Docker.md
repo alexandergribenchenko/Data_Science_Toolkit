@@ -45,10 +45,15 @@
 - `docker images`: Muestra un listado completo de todas las imagenes que se han descargado en la máquina.
 
 #### Descargar imagenes
+Comando:
 ``` bash
 docker pull [nombre_imagen]
+```
+Ejemplo:
+``` bash
 docker pull mysql
 ```
+
 
 - `docker pull [nombre_imagen]`: Descargar la última versión de la imagen, es decir la que tiene el `TAG` latest.
 Ejemplo: `docker pull mysql`
