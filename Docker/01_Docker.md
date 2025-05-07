@@ -61,8 +61,9 @@
 - `docker commit [nombre_del_container] [nombre_imagen_que_deseamos_crear:tag_que_deseamos_asignar]`: construir una imagen a partir de un container.
    * Ejemplo: `docker commit poc_container image_from_container:tag_propio`.
 
-# 03. Docker - Comandos de contenedores: general
+# 03. Docker - Comandos de contenedores
 
+## 03.01. Docker - Comandos de contenedores: general
 #### Enlistar contenedores
 - `docker ps`: enlista todos los contenedores se encuntren activos.
 - `docker ps -a`: enlista todos los contenedores se encuntren activos o no (esto se evalua en la columna `STATUS`).
@@ -87,7 +88,7 @@
 - `docker exec -it [container_que_esta_corriendo] [opcion de consola:ejemplo en ubuntu /bin/bash]`: entrar por consola a un container que ya esta corriendo.
 - `docker run -it [nombre_de_la_imagen] [opcion de consola:ejemplo en ubuntu /bin/bash]`: correr en modo interactivo entrando en la consola dentro del container.
 
-# 04. Docker - Comandos de contenedores: `docker run = docker pull + docker create + docker start`
+## 03.02. Docker - Comandos de contenedores: `docker run = docker pull + docker create + docker start`
 
 #### Descargar imagen + Crear contenedor + Iniciar Contenedor: `docker run`
 - `docker run [nombre_imagen_base:tag]`: un comando que resume todo el proceso.
