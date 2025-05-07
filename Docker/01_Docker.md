@@ -50,8 +50,10 @@
     * Ejemplo: `docker pull mysql:8-oraclelinux8` donde el `tag` es `8-oraclelinux8`.
 
 #### Eliminar imagenes
-- `docker image rm [nombre_imagen]:[#_vesion]`: Remover una imagen en específico de docker.
+- `docker image rmi [nombre_imagen]:[#_vesion]`: Remover una imagen en específico de docker.
     * Ejemplo: `docker rm mysql:8-oraclelinux8`
+- `docker image prune -a -f`: borra todas las imagenes no usadas por ningun contenedor.
+
 
 #### Crear una imagen a partir de un Dockerfile: `docker build`
 - `docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`: construir una imagen a partir de un dockerfile.
