@@ -53,11 +53,11 @@
       - `-a`: Elimina todas las imágenes no usadas por ningún contenedor, no solo las imágenes "dangling" (huérfanas sin etiquetas).
       - `-f`: Ejecuta el comando sin pedir confirmación.
 
-#### Crear una imagen a partir de un Dockerfile: `docker build`
+####  `docker build`: Crear una imagen a partir de un Dockerfile
 - `docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`: construir una imagen a partir de un dockerfile.
     * Ejemplo: `docker build -t imagen_a_crear:tag_a_crear`.
 
-#### Crear una imagen a partir de un container: `docker commit`
+#### `docker commit`: Crear una imagen a partir de un container:
 - `docker commit [nombre_del_container] [nombre_imagen_que_deseamos_crear:tag_que_deseamos_asignar]`: construir una imagen a partir de un container.
    * Ejemplo: `docker commit poc_container image_from_container:tag_propio`.
 
@@ -90,7 +90,7 @@
 
 ## 03.02. Docker - Comandos de contenedores: `docker run = docker pull + docker create + docker start`
 
-#### Descargar imagen + Crear contenedor + Iniciar Contenedor: `docker run`
+####`docker run`: Descargar imagen + Crear contenedor + Iniciar Contenedor: 
 - `docker run [nombre_imagen_base:tag]`: un comando que resume todo el proceso.
     * Ejemplo: `docker run python:3.10-slim`.
    * Opciones: 
@@ -98,17 +98,18 @@
       - `-e`: variable de entorno.
       - `--rm`: lo incluimos si queremos el el contenedor no persista (que se elimine cuando se deje detenga el contenedor). Automatically remove the container when it exits.
       - `-it`: Modo interactivo con pseudo-terminal
-- `docker run --name [nombre_que_queremos_dar_al_container] -d [nombre_imagen_base]`: un comando que resume todo el proceso. Descarga la imagen (si es que no existe ya), crea un contenedor a partir de esa imagen y ademas lo inicializa. El comando -d es para que se ejecute en modo `deattached`.
-- `docker run --name [nombre_que_queremos_dar_al_container] --rm -i -t -p [puerto_host]:[puerto_contenedor] -e [nombre_variable_entorno]=[valor_variable_entorno] [imagen_base]`: Crea un contenedor con base a una imagen base ya creada.
 
 #### Ejemplos de `docker run`
-- `docker run -d -t [nombre_imagen_base:tag]`: levanta el contenedor y lo deja corriendo en modo deatach (running in the background), lo que permite que el contenedor siga corriendo, aunque regremos a la consola principal.
-    * Ejemplo: `docker run -d -t python:3.10-slim`.
-- `docker run -it --name=[nombre_para_contenedor] [image:tag] [bash]`: crear un contenedor con un nombre en particular, lo enciende y entra en modo interactivo.
-   * Ejemplo: `docker run -it --name=nombre_para_contenedor python:3.10-slim bash`.
-1. `docker run --name notebook --rm -i -t -p 8888:8888 -e TYPE=notebook jorgecardona/jupyter`
-2. `docker run --name lab --rm -i -t -p 8888:8888 jorgecardona/jupyter`
-3. `docker run --rm -ti [nombre de la imagen]`: Para un caso en el que queremos desplegar el contenedor pero que no persista y que una vez lo paremos se borre.
+1. `docker run -d -it [nombre_imagen_base:tag]`: levanta el contenedor y lo deja corriendo en modo deatach (running in the background), lo que permite que el contenedor siga corriendo, aunque regremos a la consola principal.
+    * Ejemplo: `docker run -d -it python:3.10-slim`.
+2. `docker run -it --rm --name=[nombre_para_contenedor] [image:tag] [bash]`: crear un contenedor con un nombre en particular, lo enciende y entra en modo interactivo.
+   * Ejemplo: `docker run -it --rm --name=nombre_para_contenedor python:3.10-slim bash`.
+  
+3. `docker run --name [nombre_que_queremos_dar_al_container] -d [nombre_imagen_base]`: un comando que resume todo el proceso. Descarga la imagen (si es que no existe ya), crea un contenedor a partir de esa imagen y ademas lo inicializa. El comando -d es para que se ejecute en modo `deattached`.
+    * Ejemplo: `docker run --name container_a_crear -d -t python:3.10-slim`.
+4. `docker run --name [nombre_que_queremos_dar_al_container] --rm -i -t -p [puerto_host]:[puerto_contenedor] -e [nombre_variable_entorno]=[valor_variable_entorno] [imagen_base]`: Crea un contenedor con base a una imagen base ya creada.
+5. `docker run --name notebook --rm -i -t -p 8888:8888 -e TYPE=notebook jorgecardona/jupyter`
+6. `docker run --name lab --rm -i -t -p 8888:8888 jorgecardona/jupyter`
 
 # 04. Docker - Dockerfile: `docker build`
 
