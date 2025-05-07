@@ -42,7 +42,7 @@
 
 - [dockerhub](https://hub.docker.com/) es el repositorio oficial donde se encuentrán las imagenes de docker.
 #### Enlistar imagenes
-- `docker images`: Muestra un listado completo de todas las imagenes que se han descargado en la máquina.
+- `docker images`: Muestra un listado completo de todas las imagenes que se han descargado en la máquina host así esten siendo utilizadas por un contenedor o no.
 
 #### Descargar imagenes de dockerhub
 - `docker pull [nombre_imagen]`: Descargar la última versión de la imagen, es decir la que tiene el `TAG` latest.
