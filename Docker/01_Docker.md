@@ -2,9 +2,9 @@
 
 # Atajo: comandos más usados:
 - `docker build -t imagen_dockerfile:1.1 .`
-- `docker run -d -it python:3.10-slim`
-- `docker run -it --rm --name=nombre_para_contenedor python:3.10-slim bash`
-- `docker exec -it beautiful_jang /bin/bash`
+- `docker run -d -it imagen_dockerfile:1.1`
+- `docker run -it --rm --name=nombre_para_contenedor imagen_dockerfile:1.1`
+- `docker exec -it imagen_dockerfile:1.1 /bin/bash`
 
 # Introducción
 ## A. Code Canvas Docker
