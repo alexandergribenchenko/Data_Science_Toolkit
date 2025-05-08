@@ -118,10 +118,6 @@
 - `docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`:
    * Ejemplo: `docker build -t imagen_dockerfile .`
 
-
-Posteriormente: `docker run --rm -ti imagen_dockerfile` 
-o de manera conjunta: `docker build -t imagen_dockerfile . && docker run --rm -ti imagen_dockerfile`
-
 #### Sentencia 01. FROM: Toma una imagen como base sobre la que se va a construir (dockerfile vs console)
 - Si el docker file contiene: `FROM ubuntu:10.04`
 - Analogo a ejecutar: `docker pull ubuntu:10.04`
@@ -139,6 +135,10 @@ El el punto de origen del container se toma como su raiz y el punto de origen de
 
 #### Sentencia 05. CMD: sentencia que se ejecuta una vez el container se inicializa
 - `CMD [sentencia_a_ejecutar]`: por ejemplo `CMD python`.
+
+**Nota**: Para poder ejecutar los siguientes comando docker desktop debe estar abierto y estarse ejecutando en la maquina host, sino los comandos retornaran error.
+Posteriormente: `docker run --rm -ti imagen_dockerfile` 
+o de manera conjunta: `docker build -t imagen_dockerfile . && docker run --rm -ti imagen_dockerfile`
 
 # XXX Experimento docker: 
 #### Experimento 01.
