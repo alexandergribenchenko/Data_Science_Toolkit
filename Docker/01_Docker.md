@@ -114,26 +114,26 @@
 
 # 04. Docker - Comandos Dockerfile
 
-#### `docker build`: Crear una imagen a partir de un Dockerfile 
+## `docker build`: Crear una imagen a partir de un Dockerfile 
 - `docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`:
    * Ejemplo: `docker build -t imagen_dockerfile .`
 
-#### Sentencia 01. FROM: Toma una imagen como base sobre la que se va a construir (dockerfile vs console)
+### Sentencia 01. FROM: Toma una imagen como base sobre la que se va a construir (dockerfile vs console)
 - Si el docker file contiene: `FROM ubuntu:10.04`
 - Analogo a ejecutar: `docker pull ubuntu:10.04`
 
-#### Sentencia 02. COPY: Copiar archivos al interior del container
+### Sentencia 02. COPY: Copiar archivos al interior del container
 - Si el docker file contiene: `COPY [ruta_host] [ruta_container]` ejemplo `COPY app_host /app_cont`
 Se hace una copia de los archivos que estan en la ruta_host a la ruta_container.
 El el punto de origen del container se toma como su raiz y el punto de origen del host se encuentra al mismo nivel que el Dockerfile.
 
-#### Sentencia 03. WORKDIR: Establecer direcrtorio de trabajo al interior del container
+### Sentencia 03. WORKDIR: Establecer direcrtorio de trabajo al interior del container
 - Situa el directorio de trabajo al interior del container en la ruta que se especifique: `WORKDIR [ruta_especificada]`.
 
-#### Sentencia 04. RUN: ejecutar sentencias al interior del container en la ruta en el WORKDIR
+### Sentencia 04. RUN: ejecutar sentencias al interior del container en la ruta en el WORKDIR
 - `RUN [Sentencias_a ejecutar]` ejemplo `RUN pip install --upgrade pip &&\ pip install -r requirements.txt`
 
-#### Sentencia 05. CMD: sentencia que se ejecuta una vez el container se inicializa
+### Sentencia 05. CMD: sentencia que se ejecuta una vez el container se inicializa
 - `CMD [sentencia_a_ejecutar]`: por ejemplo `CMD python`.
 
 **Nota**: Para poder ejecutar los siguientes comando docker desktop debe estar abierto y estarse ejecutando en la maquina host, sino los comandos retornaran error.
@@ -141,11 +141,11 @@ Posteriormente: `docker run --rm -ti imagen_dockerfile`
 o de manera conjunta: `docker build -t imagen_dockerfile . && docker run --rm -ti imagen_dockerfile`
 
 # 05. Docker - Experimentos
-#### Experimento 01.
+## Experimento 01.
 - `docker run -i -t -p 8888:8888 -v "PWD":/home --name anaconda3_cpsc322 continuumio/anaconda3:2020.11`
 - `jupyter-lab --ip='0.0.0.0' --port=8888 --no-browser --allow-root --notebook-dir=/home`
 
-#### Experimento 02. 
+## Experimento 02. 
 ``` python
 FROM continuumio/miniconda3:4.10.3p1
 RUN conda install \
@@ -161,7 +161,7 @@ CMD ["jupyter-lab","--ip=0.0.0.0","--no-browser","--allow-root", "--notebook-dir
 - **Comando 01:** `docker build -t img_jupyter .` 
 - **Comando 02:** `docker run --rm -it -p 8888:8888 img_jupyter`
 
-#### Experimento 03. Propio.
+## Experimento 03. Propio.
 ``` python
 FROM continuumio/anaconda3
 
