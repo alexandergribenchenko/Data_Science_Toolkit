@@ -92,7 +92,7 @@
 
 ### `docker run`: Descargar imagen + Crear contenedor + Iniciar Contenedor: 
 - `docker run [nombre_imagen_base:tag]`: un comando que resume todo el proceso.
-    * Ejemplo: `docker run python:3.10-slim`.
+   * Ejemplo: `docker run python:3.10-slim`.
    * Opciones: 
       - `-d`:Ejecutar en segundo plano (modo daemon), es decir, permite seguir escribiendo cosas en la misma consola sin que haya que parar el contenedor.
       - `-e`: variable de entorno.
@@ -117,7 +117,25 @@
 ## `docker build`: Crear una imagen a partir de un Dockerfile 
 - `docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`:
    * Ejemplo: `docker build -t imagen_dockerfile .`
+   * Opciones: 
+      - `-t`: Asigna nombre y etiqueta a la imagen.
 
+## Ejemplo estructura Dockerfile
+``` python
+FROM python:3.10-slim
+
+COPY folder_test /folder_inside
+
+WORKDIR /folder_inside
+
+RUN apt-get update \
+    && apt-get install -y bash \
+    && apt-get clean
+
+RUN pip install -r requirements.txt
+
+CMD ["bash"]
+```
 ### Sentencia 01. FROM: Toma una imagen como base sobre la que se va a construir (dockerfile vs console)
 - Si el docker file contiene: `FROM ubuntu:10.04`
 - Analogo a ejecutar: `docker pull ubuntu:10.04`
