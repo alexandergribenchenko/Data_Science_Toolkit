@@ -2,7 +2,7 @@
 
 # Atajo: comandos más usados:
 - `docker build -t imagen_dockerfile:1.1 .`
-- `docker run -d -it python:3.10-slim' 
+- `docker run -d -it python:3.10-slim`
 - `docker exec -it beautiful_jang /bin/bash`
 
 # Introducción
