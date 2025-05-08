@@ -151,10 +151,6 @@ El el punto de origen del container se toma como su raiz y el punto de origen de
 ### Sentencia 05. CMD: sentencia que se ejecuta una vez el container se inicializa
 - `CMD [sentencia_a_ejecutar]`: por ejemplo `CMD python`.
 
-
-- `docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel] && docker run --rm -ti [nombre_que_queremos_dar_a_la_imagen] sh`: ejemplo.
-- `docker build -t image_example . && docker run --rm -ti image_example sh`: ejemplo.
-
 **Nota**: Pueden ejecutarse comando en consola de manera conjunta, es decir: `docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel] && docker run --rm -ti [nombre_que_queremos_dar_a_la_imagen] sh`.
    * Ejemplo : `docker build -t imagen_dockerfile . && docker run --rm -ti imagen_dockerfile`. 
 
