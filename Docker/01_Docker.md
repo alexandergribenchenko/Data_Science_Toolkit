@@ -51,8 +51,8 @@
       - `-f`: Ejecuta el comando sin pedir confirmación.
 
 ## `docker build`: Crear una imagen a partir de un Dockerfile
-- `docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`: construir una imagen a partir de un dockerfile.
-    * Ejemplo: `docker build -t imagen_a_crear:tag_a_crear`.
+- `docker build -t [nombre_que_queremos_dar_a_la_imagen:tag_que_queremos] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`: construir una imagen a partir de un dockerfile.
+    * Ejemplo: `docker build -t imagen_a_crear:tag_a_crear .`
 
 ## `docker commit`: Crear una imagen a partir de un container:
 - `docker commit [nombre_del_container] [nombre_imagen_que_deseamos_crear:tag_que_deseamos_asignar]`: construir una imagen a partir de un container.
