@@ -1,5 +1,10 @@
 # DOCKER: CHEATSHEET PROPIO
 
+# Atajo: comandos más usados:
+- `docker build -t imagen_dockerfile:1.1 .`
+- `docker run -d -it python:3.10-slim' 
+- `docker exec -it beautiful_jang /bin/bash`
+
 # Introducción
 ## A. Code Canvas Docker
 - [Code Canvas Docker](https://docs.google.com/presentation/d/1Ajv443VrFU6ks8x-0YY5-cEBpvB_4swAX5_pQSWuYmg/edit#slide=id.g1c9ad9ef6e5_0_6)
