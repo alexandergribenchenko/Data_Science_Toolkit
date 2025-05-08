@@ -140,7 +140,7 @@ El el punto de origen del container se toma como su raiz y el punto de origen de
 Posteriormente: `docker run --rm -ti imagen_dockerfile` 
 o de manera conjunta: `docker build -t imagen_dockerfile . && docker run --rm -ti imagen_dockerfile`
 
-# 04. Docker - Experimentos
+# 05. Docker - Experimentos
 #### Experimento 01.
 - `docker run -i -t -p 8888:8888 -v "PWD":/home --name anaconda3_cpsc322 continuumio/anaconda3:2020.11`
 - `jupyter-lab --ip='0.0.0.0' --port=8888 --no-browser --allow-root --notebook-dir=/home`
