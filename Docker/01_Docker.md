@@ -1,8 +1,5 @@
 # DOCKER: CHEATSHEET PROPIO
 
-- `docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel] && docker run --rm -ti [nombre_que_queremos_dar_a_la_imagen] sh`: ejemplo.
-- `docker build -t image_example . && docker run --rm -ti image_example sh`: ejemplo.
-
 # Introducción
 ## A. Code Canvas Docker
 - [Code Canvas Docker](https://docs.google.com/presentation/d/1Ajv443VrFU6ks8x-0YY5-cEBpvB_4swAX5_pQSWuYmg/edit#slide=id.g1c9ad9ef6e5_0_6)
@@ -154,9 +151,12 @@ El el punto de origen del container se toma como su raiz y el punto de origen de
 ### Sentencia 05. CMD: sentencia que se ejecuta una vez el container se inicializa
 - `CMD [sentencia_a_ejecutar]`: por ejemplo `CMD python`.
 
-**Nota**: Para poder ejecutar los siguientes comando docker desktop debe estar abierto y estarse ejecutando en la maquina host, sino los comandos retornaran error.
-Posteriormente: `docker run --rm -ti imagen_dockerfile` 
-o de manera conjunta: `docker build -t imagen_dockerfile . && docker run --rm -ti imagen_dockerfile`
+
+- `docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel] && docker run --rm -ti [nombre_que_queremos_dar_a_la_imagen] sh`: ejemplo.
+- `docker build -t image_example . && docker run --rm -ti image_example sh`: ejemplo.
+
+**Nota**: Pueden ejecutarse comando en consola de manera conjunta, es decir: `docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel] && docker run --rm -ti [nombre_que_queremos_dar_a_la_imagen] sh`.
+   * Ejemplo : `docker build -t imagen_dockerfile . && docker run --rm -ti imagen_dockerfile`. 
 
 # 05. Docker - Experimentos
 ## Experimento 01.
