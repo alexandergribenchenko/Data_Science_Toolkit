@@ -83,6 +83,7 @@
      
 ### Acceder al interior de los contenedores en ejecución
 - `docker exec -it [container_que_esta_corriendo] [opcion de consola:ejemplo en ubuntu /bin/bash]`: entrar por consola a un container que ya esta corriendo.
+   * Ejemplo: `docker exec -it beautiful_jang /bin/bash`
 - `docker run -it [nombre_de_la_imagen] [opcion de consola:ejemplo en ubuntu /bin/bash]`: correr en modo interactivo entrando en la consola dentro del container.
 
 ## 03.02. Docker - Comandos de contenedores: `docker run = docker pull + docker create + docker start`
