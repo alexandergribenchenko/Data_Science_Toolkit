@@ -112,8 +112,8 @@
 # 04. Docker - Comandos Dockerfile
 
 ## `docker build`: Crear una imagen a partir de un Dockerfile 
-- `docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`:
-   * Ejemplo: `docker build -t imagen_dockerfile .`
+- `docker build -t [nombre_que_queremos_dar_a_la_imagen:tag_que_queremos_dar] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`:
+   * Ejemplo: `docker build -t imagen_dockerfile_1.1 .`
    * Opciones: 
       - `-t`: Asigna nombre y etiqueta a la imagen.
 
