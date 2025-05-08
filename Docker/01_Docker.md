@@ -3,6 +3,7 @@
 # Atajo: comandos más usados:
 - `docker build -t imagen_dockerfile:1.1 .`
 - `docker run -d -it imagen_dockerfile:1.1`
+- `docker run -d -it --name=container_test imagen_dockerfile:1.1`
 - `docker run -it --rm --name=nombre_para_contenedor imagen_dockerfile:1.1`
 - `docker exec -it imagen_dockerfile:1.1 /bin/bash`
 
