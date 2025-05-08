@@ -116,7 +116,14 @@
 5. `docker run --name notebook --rm -i -t -p 8888:8888 -e TYPE=notebook jorgecardona/jupyter`
 6. `docker run --name lab --rm -i -t -p 8888:8888 jorgecardona/jupyter`
 
+## 03.03. Docker - Comandos de contenedores: publicar contenedores en dockerhub
+- `docker login`: un comando que permite hacer el login en dockerhub.
+- `docker tag [nombre_actual_imagen] [nombre_usuario_github/nombre_nuevo_imagen:nuevo_tag]`: cambiar el tag a la imagen porque a la raiz de dokerhub solo se pueden subir repositorios oficiles.
+   * Ejemplo:`docker tag imagen_dockerfile:1.1 alexandergribenchenko/imagen_dockerfile:1.1`
+- `docker push [nombre_de_la_imagen:tag_de_la_imagen]`: Permite publicar la imagen en dockerhub.
+   * Ejemplo: `docker push alexandergribenchenko/imagen_dockerfile:1.1`
 
+  
 # 04. Docker - Comandos Dockerfile
 
 ## `docker build`: Crear una imagen a partir de un Dockerfile 
