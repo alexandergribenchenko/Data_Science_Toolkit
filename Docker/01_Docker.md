@@ -5,6 +5,7 @@
 - `docker run -d -it imagen_dockerfile:1.1`
 - `docker run -d -it --name=container_test imagen_dockerfile:1.1`
 - `docker run -it --rm --name=nombre_para_contenedor imagen_dockerfile:1.1`
+- `docker run -it --rm -p 9000:8888 --name=nombre_para_contenedor imagen_dockerfile:1.1`
 - `docker exec -it imagen_dockerfile:1.1 /bin/bash`
 
 # Introducción
@@ -103,6 +104,7 @@
       - `-e`: variable de entorno.
       - `--rm`: lo incluimos si queremos el el contenedor no persista (que se elimine cuando se deje detenga el contenedor). Automatically remove the container when it exits.
       - `-it`: Modo interactivo con pseudo-terminal
+      - `-p [puerto_host]:[puerto_container]`: sirve para exponer un puerto del contenedor en el host, permitiendo que servicios dentro del contenedor sean accesibles desde fuera.
 
 ### Ejemplos de `docker run`
 1. `docker run -d -it [nombre_imagen_base:tag]`: levanta el contenedor y lo deja corriendo en modo deatach (running in the background), lo que permite que el contenedor siga corriendo, aunque regremos a la consola principal.
