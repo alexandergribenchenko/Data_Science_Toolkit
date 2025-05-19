@@ -28,7 +28,9 @@
 - Imagen:
 - Contenedor:
 - Docker file:
-- Docker compose:
+- Docker compose
+- Docker instructions: se encuentran en el Docker file `FROM`, `RUN`, etc.
+- Docker commands: se escriben en el terminal `run`, `start, etc.
 
 # 01. Docker - Comandos generales
 - `docker`: Muestra todas las opciones de docker
@@ -150,23 +152,26 @@ RUN pip install -r requirements.txt
 
 CMD ["bash"]
 ```
-### Sentencia 01. FROM: Toma una imagen como base sobre la que se va a construir (dockerfile vs console)
+### Instrucción 01. FROM: Toma una imagen como base sobre la que se va a construir (dockerfile vs console)
 - Si el docker file contiene: `FROM ubuntu:10.04`
 - Analogo a ejecutar: `docker pull ubuntu:10.04`
 
-### Sentencia 02. COPY: Copiar archivos al interior del container
+### Instrucción 02. COPY: Copiar archivos al interior del container
 - Si el docker file contiene: `COPY [ruta_host] [ruta_container]` ejemplo `COPY app_host /app_cont`
 Se hace una copia de los archivos que estan en la ruta_host a la ruta_container.
 El el punto de origen del container se toma como su raiz y el punto de origen del host se encuentra al mismo nivel que el Dockerfile.
 
-### Sentencia 03. WORKDIR: Establecer direcrtorio de trabajo al interior del container
+### Instrucción 03. WORKDIR: Establecer direcrtorio de trabajo al interior del container
 - Situa el directorio de trabajo al interior del container en la ruta que se especifique: `WORKDIR [ruta_especificada]`.
 
-### Sentencia 04. RUN: ejecutar sentencias al interior del container en la ruta en el WORKDIR
+### Instrucción 04. RUN: ejecutar sentencias al interior del container en la ruta en el WORKDIR
 - `RUN [Sentencias_a ejecutar]` ejemplo `RUN pip install --upgrade pip &&\ pip install -r requirements.txt`
 
-### Sentencia 05. CMD: sentencia que se ejecuta una vez el container se inicializa
+### Instrucción 05. CMD: sentencia que se ejecuta una vez el container se inicializa
 - `CMD [sentencia_a_ejecutar]`: por ejemplo `CMD python`.
+- 
+### Instrucción 06. ENTRYPOINT: sentencia XXX
+- `ENTRYPOINT ["command", "argument"]`: por ejemplo `ENTRYPOINT ["python", "hello_world.py"]`.
 
 **Nota**: Pueden ejecutarse comando en consola de manera conjunta, es decir: `docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel] && docker run --rm -ti [nombre_que_queremos_dar_a_la_imagen] sh`.
    * Ejemplo : `docker build -t imagen_dockerfile . && docker run --rm -ti imagen_dockerfile`. 
