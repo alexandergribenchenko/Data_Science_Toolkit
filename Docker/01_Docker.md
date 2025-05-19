@@ -8,6 +8,22 @@
 - `docker run -it --rm -p 9000:8888 --name=nombre_para_contenedor imagen_dockerfile:1.1`
 - `docker exec -it imagen_dockerfile:1.1 /bin/bash`
 
+``` python
+FROM python:3.10-slim
+
+COPY folder_test /folder_inside
+
+WORKDIR /folder_inside
+
+RUN apt-get update \
+    && apt-get install -y bash \
+    && apt-get clean
+
+RUN pip install -r requirements.txt
+
+CMD ["bash"]
+```
+
 # Introducción
 ## A. Code Canvas Docker
 - [Code Canvas Docker](https://docs.google.com/presentation/d/1Ajv443VrFU6ks8x-0YY5-cEBpvB_4swAX5_pQSWuYmg/edit#slide=id.g1c9ad9ef6e5_0_6)
