@@ -8,6 +8,8 @@
 - `docker run -it --rm -p 9000:8888 --name=nombre_para_contenedor imagen_dockerfile:1.1`
 - `docker exec -it imagen_dockerfile:1.1 /bin/bash`
 
+# Archivo de python
+Este es unjemplo pera *Fernanda*
 ``` python
 FROM python:3.10-slim
 
