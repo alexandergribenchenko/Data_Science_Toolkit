@@ -120,7 +120,7 @@ CMD ["bash"]
 - `docker run [nombre_imagen_base:tag]`: un comando que resume todo el proceso.
    * Ejemplo: `docker run python:3.10-slim`.
    * Opciones: 
-      - `-d`:Ejecutar en segundo plano (modo daemon), es decir, permite seguir escribiendo cosas en la misma consola sin que haya que parar el contenedor.
+      - `-d`:Ejecutar en segundo plano (modo daemon, detached), es decir, permite seguir escribiendo cosas en la misma consola sin que haya que parar el contenedor.
       - `-e`: variable de entorno.
       - `--rm`: lo incluimos si queremos el el contenedor no persista (que se elimine cuando se deje detenga el contenedor). Automatically remove the container when it exits.
       - `-it`: Modo interactivo con pseudo-terminal
