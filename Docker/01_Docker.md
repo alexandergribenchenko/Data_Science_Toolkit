@@ -82,6 +82,12 @@
    * Ejemplo:`docker tag imagen_dockerfile:1.1 alexandergribenchenko/imagen_dockerfile:1.1`
 - `docker push [nombre_de_la_imagen:tag_de_la_imagen]`: Permite publicar la imagen en dockerhub.
    * Ejemplo: `docker push alexandergribenchenko/imagen_dockerfile:1.1`
+ 
+## 02.03. Docker - Comandos de imagenes: guardar y cargar imagenes como archivos
+- `docker save -o [nombre_del_archivo.tar] [nombre_imagen:tag_imagen]`: se utiliza para exportar una imagen de Docker como un archivo .tar.
+   * Ejemplo:`docker save -o docker_image_file.tar python:3.10-slim`
+- `docker load -i [nombre_del_archivo.tar]`:  importar imágenes que fueron previamente guardadas con docker save. Esto es útil para mover imágenes entre sistemas sin usar un registry (como Docker Hub).
+   * Ejemplo:`docker load -i docker_image_file.tar`. No tiene opciones especificas para importar la imagen con cierto nombre y cierto tag. Importa con las que fue guardado y si uno quiere modificarlo lo redefine luego.
 
 # 03. Docker - Comandos de contenedores
 
