@@ -78,7 +78,7 @@
  
 ## 02.02. Docker - Comandos de imagenes: publicar imagenes en dockerhub
 - `docker login`: un comando que permite hacer el login en dockerhub.
-- `docker tag [nombre_actual_imagen] [nombre_usuario_github/nombre_nuevo_imagen:nuevo_tag]`: cambiar el tag a la imagen porque a la raiz de dokerhub solo se pueden subir repositorios oficiles.
+- `docker tag [nombre_actual_imagen] [nombre_usuario_github/nombre_nuevo_imagen:nuevo_tag]`: cambiar el tag a la imagen porque a la raiz de dockerhub solo se pueden subir repositorios oficiles.
    * Ejemplo:`docker tag imagen_dockerfile:1.1 alexandergribenchenko/imagen_dockerfile:1.1`
 - `docker push [nombre_de_la_imagen:tag_de_la_imagen]`: Permite publicar la imagen en dockerhub.
    * Ejemplo: `docker push alexandergribenchenko/imagen_dockerfile:1.1`
