@@ -137,7 +137,7 @@
    * Ejemplo: `docker push alexandergribenchenko/imagen_dockerfile:1.1`
 
   
-# 04. Docker - Comandos Dockerfile
+# 04. Docker - Instrucciones Dockerfile
 
 ## `docker build`: Crear una imagen a partir de un Dockerfile 
 - `docker build -t [nombre_que_queremos_dar_a_la_imagen:tag_que_queremos_dar] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel]`:
