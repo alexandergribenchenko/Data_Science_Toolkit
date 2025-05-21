@@ -48,6 +48,8 @@
 # 02. Docker - Comandos de imagenes
 **Nota**: Para poder ejecutar los siguientes comando docker desktop debe estar abierto y estarse ejecutando en la maquina host, sino los comandos retornaran error.
 
+## 02.01. Docker - Comandos de imagenes: general
+
 - [dockerhub](https://hub.docker.com/) es el repositorio oficial donde se encuentrán las imagenes de docker.
 ## Enlistar imagenes
 - `docker images`: Muestra un listado completo de todas las imagenes que se han descargado en la máquina host así esten siendo utilizadas por un contenedor o no.
@@ -73,6 +75,13 @@
 ## `docker commit`: Crear una imagen a partir de un container:
 - `docker commit [nombre_del_container] [nombre_imagen_que_deseamos_crear:tag_que_deseamos_asignar]`: construir una imagen a partir de un container.
    * Ejemplo: `docker commit poc_container image_from_container:tag_propio`.
+ 
+## 02.02. Docker - Comandos de imagenes: publicar imagenes en dockerhub
+- `docker login`: un comando que permite hacer el login en dockerhub.
+- `docker tag [nombre_actual_imagen] [nombre_usuario_github/nombre_nuevo_imagen:nuevo_tag]`: cambiar el tag a la imagen porque a la raiz de dokerhub solo se pueden subir repositorios oficiles.
+   * Ejemplo:`docker tag imagen_dockerfile:1.1 alexandergribenchenko/imagen_dockerfile:1.1`
+- `docker push [nombre_de_la_imagen:tag_de_la_imagen]`: Permite publicar la imagen en dockerhub.
+   * Ejemplo: `docker push alexandergribenchenko/imagen_dockerfile:1.1`
 
 # 03. Docker - Comandos de contenedores
 
@@ -129,12 +138,7 @@
 5. `docker run --name notebook --rm -i -t -p 8888:8888 -e TYPE=notebook jorgecardona/jupyter`
 6. `docker run --name lab --rm -i -t -p 8888:8888 jorgecardona/jupyter`
 
-## 03.03. Docker - Comandos de contenedores: publicar contenedores en dockerhub
-- `docker login`: un comando que permite hacer el login en dockerhub.
-- `docker tag [nombre_actual_imagen] [nombre_usuario_github/nombre_nuevo_imagen:nuevo_tag]`: cambiar el tag a la imagen porque a la raiz de dokerhub solo se pueden subir repositorios oficiles.
-   * Ejemplo:`docker tag imagen_dockerfile:1.1 alexandergribenchenko/imagen_dockerfile:1.1`
-- `docker push [nombre_de_la_imagen:tag_de_la_imagen]`: Permite publicar la imagen en dockerhub.
-   * Ejemplo: `docker push alexandergribenchenko/imagen_dockerfile:1.1`
+
 
   
 # 04. Docker - Instrucciones Dockerfile
