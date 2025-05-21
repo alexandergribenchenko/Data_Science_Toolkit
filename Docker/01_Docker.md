@@ -36,6 +36,7 @@
 - Docker compose
 - Docker instructions: se encuentran en el Docker file `FROM`, `RUN`, etc.
 - Docker commands: se escriben en el terminal `run`, `start, etc.
+- `docker logs`: falta por estudiar.
 
 # 01. Docker - Comandos generales
 - `docker`: Muestra todas las opciones de docker
