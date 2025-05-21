@@ -90,6 +90,9 @@
 ### Eliminar contenedores
 - `docker rm [container_id_or_name]` ó `docker container rm [container_id_or_name]`: remover contenedor a partir de su id o su nombre.
    * Ejemplo: `docker container rm container_to_create`.
+- `docker container prune`:   elimina todos los contenedores detenidos.
+   * Opciones: 
+      - `-f`: Ejecuta el comando sin pedir confirmación.
   
 ### Iniciar o detener contenedores
 - `docker start [container_id_or_name]` ó `docker start [container_id]`: ejecutar contenedor a partir de su id o su nombre.
