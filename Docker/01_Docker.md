@@ -185,10 +185,10 @@ El el punto de origen del container se toma como su raiz y el punto de origen de
 - Situa el directorio de trabajo al interior del container en la ruta que se especifique: `WORKDIR [ruta_especificada]`.
 
 ### Instrucción 04. RUN: ejecutar sentencias al interior del container en la ruta en el WORKDIR
-- `RUN [Sentencias_a ejecutar]` ejemplo `RUN pip install --upgrade pip &&\ pip install -r requirements.txt`.Podemos darnos cuenta que hay un doble `&&` si queremos que la instrucción de la linea de comando se ejecute secuancialmente, es decir, una tras otra.
+- `RUN [Sentencias_a ejecutar]` ejemplo `RUN pip install --upgrade pip &&\ pip install -r requirements.txt`.Podemos darnos cuenta que hay un doble `&&` si queremos que la instrucción de la linea de comando se ejecute secuancialmente, es decir, una tras otra. Ejecuta comando en el momento de la construccion de la imagen y se usa típicamente para instalar software, copiar archivos, descomprimir, configurar cosas, etc.
 
 ### Instrucción 05. CMD: sentencia que se ejecuta una vez el container se inicializa
-- `CMD [sentencia_a_ejecutar]`: por ejemplo `CMD python`. Define el comando por defecto que se ejecuta al iniciar un contenedor. Usualmente se usa para lanzar la aplicación o script principal del contenedor.
+- `CMD [sentencia_a_ejecutar]`: por ejemplo `CMD python`. Define el comando por defecto que se ejecuta al iniciar un contenedor. Usualmente se usa para lanzar la aplicación o script principal del contenedor. Se usa en tiempo de ejecución (cuando haces `docker run`).
    * Ejemplo: `CMD ["python3", "app.py"]`.
 
 ### Instrucción 06. ENTRYPOINT: sentencia XXX
