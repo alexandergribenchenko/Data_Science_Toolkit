@@ -192,7 +192,7 @@ El el punto de origen del container se toma como su raiz y el punto de origen de
    * Ejemplo: `CMD ["python3", "app.py"]`.
 
 - Override the CMD set in the image: `docker run <image> <shell-command>`
-   * Ejemplo: `docker run ubuntu bash`.
+   * Ejemplo: `docker run ubuntu bash` or `/bin/bash`.
 - Override the CMD set in the image and runinteractively: `docker run -it <image> <shell-command>`
    * Ejemplo: `docker run -it ubuntu bash`.
 
