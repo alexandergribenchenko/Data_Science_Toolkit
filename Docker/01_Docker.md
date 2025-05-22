@@ -213,6 +213,12 @@ COPY /local/project/test_files $project_folder/tests
 ENV DB_USER=pipeline_user
 CMD psql -U $DB_USER
 ```
+```python
+docker run --env <key>=<value> <image-name>
+docker run --env POSTGRES_USER=test_db --env POSTGRES_PASSWORD=test_db postgres
+```
+
+
 
 ### Instrucción 09. ENTRYPOINT: sentencia XXX
 - `ENTRYPOINT ["command", "argument"]`: por ejemplo `ENTRYPOINT ["python", "hello_world.py"]`.
