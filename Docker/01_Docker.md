@@ -10,6 +10,7 @@
 - `docker run -it --rm --name=nombre_para_contenedor imagen_dockerfile:1.1`
 - `docker run -it --rm -p 9000:8888 --name=nombre_para_contenedor imagen_dockerfile:1.1`
 - `docker exec -it imagen_dockerfile:1.1 /bin/bash`
+- `echo -e "RUN curl https://assets.datacamp.com/production/repositories/6082/datasets/31a5052c6a5424cbb8d939a7a6eff9311957e7d0/pipeline_final.zip -o /pipeline_final.zip\nRUN unzip /pipeline_final.zip\nRUN rm /pipeline_final.zip" >> Dockerfile`
 
 
 
