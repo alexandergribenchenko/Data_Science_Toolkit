@@ -198,8 +198,23 @@ El el punto de origen del container se toma como su raiz y el punto de origen de
 - Override the CMD set in the image and runinteractively: `docker run -it <image> <shell-command>`
    * Ejemplo: `docker run -it ubuntu bash`.
 
+### Instrucción 06. USER: cambia el usuario con el que se van a ejecutar las siguientes capas.
 
-### Instrucción 06. ENTRYPOINT: sentencia XXX
+### Instrucción 07. ARG: setea variables de argumento.
+```python
+FROM ubuntu
+ARG project_folder=/projects/pipeline_v3
+COPY /local/project/files $project_folder
+COPY /local/project/test_files $project_folder/tests
+```
+
+### Instrucción 08. ENV: setea variables de entorno.
+```python
+ENV DB_USER=pipeline_user
+CMD psql -U $DB_USER
+```
+
+### Instrucción 09. ENTRYPOINT: sentencia XXX
 - `ENTRYPOINT ["command", "argument"]`: por ejemplo `ENTRYPOINT ["python", "hello_world.py"]`.
 
 **Nota**: Pueden ejecutarse comando en consola de manera conjunta, es decir: `docker build -t [nombre_que_queremos_dar_a_la_imagen] [ruta_Dockerfile: por defecto '.' si estamos al mismo nivel] && docker run --rm -ti [nombre_que_queremos_dar_a_la_imagen] sh`.
