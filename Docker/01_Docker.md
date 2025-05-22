@@ -315,8 +315,11 @@ RUN pip install psycopg2-binary
 - **Comando 01:** docker-compose up -d
 - **Comando 02:** docker-compose down
 
-
-
-
 # Bonus Linux
-- Para imprimir un archivo en la linea de comando (o concatenarlo) empleo la función `cat [nombre_archivo]`
+- `cat [nombre_archivo_texto_a_leer]`: para imprimir y visualizar enconsola el archivo de texto.
+- `touch [nombre_archivo_texto_a_crear]`: permite crear un archivo te texto vacio.
+- `nano [nombre_archivo_texto_a_editat]`: permite entrar a editar el archivo con `nano`.
+   * Comandos nano: 
+     - `[crtl+s]`: guardar.
+     - `[crtl+x]`: salir.
+- `echo ["linea_que_deseamos_adicionar"] >> [archivo_donde_deseamos_adicionar]`: Permite adicionar lineas adicionales a ciertos archivos: ejemplo `echo "RUN apt-get update" >> Dockerfile`.
