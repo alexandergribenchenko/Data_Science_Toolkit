@@ -188,8 +188,9 @@ El el punto de origen del container se toma como su raiz y el punto de origen de
 - `RUN [Sentencias_a ejecutar]` ejemplo `RUN pip install --upgrade pip &&\ pip install -r requirements.txt`.Podemos darnos cuenta que hay un doble `&&` si queremos que la instrucción de la linea de comando se ejecute secuancialmente, es decir, una tras otra.
 
 ### Instrucción 05. CMD: sentencia que se ejecuta una vez el container se inicializa
-- `CMD [sentencia_a_ejecutar]`: por ejemplo `CMD python`.
-- 
+- `CMD [sentencia_a_ejecutar]`: por ejemplo `CMD python`. Define el comando por defecto que se ejecuta al iniciar un contenedor. Usualmente se usa para lanzar la aplicación o script principal del contenedor.
+   * Ejemplo: `CMD ["python3", "app.py"]`.
+
 ### Instrucción 06. ENTRYPOINT: sentencia XXX
 - `ENTRYPOINT ["command", "argument"]`: por ejemplo `ENTRYPOINT ["python", "hello_world.py"]`.
 
