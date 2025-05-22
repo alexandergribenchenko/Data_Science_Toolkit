@@ -217,7 +217,14 @@ CMD psql -U $DB_USER
 docker run --env <key>=<value> <image-name>
 docker run --env POSTGRES_USER=test_db --env POSTGRES_PASSWORD=test_db postgres
 ```
-
+```python
+$ docker run -e NAME=Alexander hello_image
+Hello, my name is Alexander
+$ cat Dockerfile
+FROM ubuntu:22.04
+ENV NAME=Tim
+CMD echo "Hello, my name is $NAME"
+```
 
 
 ### Instrucción 09. ENTRYPOINT: sentencia XXX
