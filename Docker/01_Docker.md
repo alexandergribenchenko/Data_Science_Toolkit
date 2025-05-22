@@ -188,8 +188,14 @@ El el punto de origen del container se toma como su raiz y el punto de origen de
 - `RUN [Sentencias_a ejecutar]` ejemplo `RUN pip install --upgrade pip &&\ pip install -r requirements.txt`.Podemos darnos cuenta que hay un doble `&&` si queremos que la instrucción de la linea de comando se ejecute secuancialmente, es decir, una tras otra. Ejecuta comando en el momento de la construccion de la imagen y se usa típicamente para instalar software, copiar archivos, descomprimir, configurar cosas, etc.
 
 ### Instrucción 05. CMD: sentencia que se ejecuta una vez el container se inicializa
-- `CMD [sentencia_a_ejecutar]`: por ejemplo `CMD python`. Define el comando por defecto que se ejecuta al iniciar un contenedor. Usualmente se usa para lanzar la aplicación o script principal del contenedor. Se usa en tiempo de ejecución (cuando haces `docker run`).
+- `CMD [sentencia_a_ejecutar]`: por ejemplo `CMD python`. Define el comando por defecto que se ejecuta al iniciar un contenedor. Usualmente se usa para lanzar la aplicación o script principal del contenedor. Se usa en tiempo de ejecución (cuando haces `docker run`). Solo puede existi un comando `CMD` y si hay multiples solo el último tendra efecto.
    * Ejemplo: `CMD ["python3", "app.py"]`.
+
+- Override the CMD set in the image: `docker run <image> <shell-command>`
+   * Ejemplo: `docker run ubuntu bash`.
+- Override the CMD set in the image and runinteractively: `docker run -it <image> <shell-command>`
+   * Ejemplo: `docker run -it ubuntu bash`.
+
 
 ### Instrucción 06. ENTRYPOINT: sentencia XXX
 - `ENTRYPOINT ["command", "argument"]`: por ejemplo `ENTRYPOINT ["python", "hello_world.py"]`.
