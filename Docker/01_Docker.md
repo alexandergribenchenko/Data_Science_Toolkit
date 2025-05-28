@@ -172,6 +172,9 @@ RUN pip install -r requirements.txt
 
 CMD ["bash"]
 ```
+- `apt-get update`: Actualiza la lista de versiones disponibles de los paquetes. No instala nada.
+- `apt-get upgrade`: Instala actualizaciones de los paquetes ya instalados, siempre que no requieran cambiar dependencias. Sí instala.
+
 **NOTA**: conviene que las instucciones que se generen, que son realamnte capas se hagan en el orden de la que menos cambia a la que más cambia para que los diferentes *re-builds* no se tomen tanto tiempo. DOcker reconoce lo que no cambio y lo carga de *builds* anteriores.
 
 ### Instrucción 01. FROM: Toma una imagen como base sobre la que se va a construir (dockerfile vs console)
