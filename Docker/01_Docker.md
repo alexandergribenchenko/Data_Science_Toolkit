@@ -202,6 +202,12 @@ El el punto de origen del container se toma como su raiz y el punto de origen de
    * Ejemplo: `docker run -it ubuntu bash`.
 
 ### Instrucción 06. USER: cambia el usuario con el que se van a ejecutar las siguientes capas.
+``` python
+FROM ubuntu:22.04
+RUN useradd -m repl
+USER repl
+CMD apt-get install python3
+```
 
 ### Instrucción 07. ARG: setea variables de argumento.
 ```python
