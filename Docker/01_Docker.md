@@ -154,6 +154,36 @@
    * Ejemplo (archivo unico): `docker run -v ~/workspace/customerdata.json:/customerdata.json crane`.
    * Ejemplo (carpeta completa): docker run -v ~/workspace:/app/workspace crane
 
+# 04. Docker - Uso de volumenes
+
+### Manejo de volúmenes Docker
+
+- `docker volume`: comando base para gestionar volúmenes Docker.
+
+---
+
+### Crear volúmenes
+- `docker volume create <volume_name>`: crea un nuevo volumen Docker gestionado.
+   * Ejemplo: `docker volume create datos_app`.
+
+---
+
+### Listar volúmenes
+- `docker volume ls` ó `docker volume list`: muestra todos los volúmenes disponibles.
+
+---
+
+### Inspeccionar volúmenes
+- `docker volume inspect <volume_name>`: muestra detalles del volumen como su nombre, punto de montaje, opciones, etc.
+   * Ejemplo de salida incluye: `Name`, `Driver`, `Mountpoint`, `Labels`, `Scope`.
+
+---
+
+### Eliminar volúmenes
+- `docker volume rm <volume_name>`: elimina un volumen específico.
+   * Nota: solo puedes eliminarlo si **no está en uso** por algún contenedor.
+
+
 
 # 04. Docker - Instrucciones Dockerfile
 
