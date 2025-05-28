@@ -151,9 +151,10 @@
 
 ### `docker run`: uso de volumenes
 1. `docker run -v [path_en_host:path_encontainer] [imagen_a_correr]`: se usa para montar un volumen, conectando una carpeta o archivo del sistema local (host) con una ruta dentro del contenedor. Esto permite compartir datos entre ambos: lo que el contenedor escribe o lee en esa ruta se refleja directamente en el host, y viceversa. Es clave para mantener datos persistentes o para facilitar el desarrollo sin modificar la imagen.
-   * Ejemplo: `docker run -v ~/workspace/customerdata.json:/customerdata.json crane`.
+   * Ejemplo (archivo unico): `docker run -v ~/workspace/customerdata.json:/customerdata.json crane`.
+   * Ejemplo (carpeta completa): docker run -v ~/workspace:/app/workspace crane
 
-  
+
 # 04. Docker - Instrucciones Dockerfile
 
 ## `docker build`: Crear una imagen a partir de un Dockerfile 
