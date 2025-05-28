@@ -184,6 +184,13 @@
    * Nota: solo puedes eliminarlo si **no está en uso** por algún contenedor.
 
 
+### Usar volumen con contenedor
+- `docker run -v <volume_name>:<ruta_en_contenedor> <imagen>`: asocia el volumen a una ruta dentro del contenedor. Los datos generados o modificados en esa ruta se guardarán en el volumen.
+   * Ejemplo: `docker run -v sqldata:/data postgres`
+     - Monta el volumen `sqldata` en la ruta `/data` dentro del contenedor que corre la imagen `postgres`.
+     - Los datos almacenados en `/data` persistirán incluso si el contenedor se elimina.
+
+
 
 # 04. Docker - Instrucciones Dockerfile
 
