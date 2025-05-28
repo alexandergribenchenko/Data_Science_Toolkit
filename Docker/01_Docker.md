@@ -42,7 +42,11 @@
 # 01. Docker - Comandos generales
 - `docker`: Muestra todas las opciones de docker
 - `docker --version` ó `docker -v` : Versión de docker instalada.
-- `docker info`: Detalle de la version y configuración de docker
+- `docker info`: Detalle de la version y configuración de docker.
+- `docker --help`: borra los containers, imagenes que no esten activos.
+- `docker [comando_de_interes] --help`: muestra la ayuda para un comando en específico.
+   * Ejemplo: `docker run --help`
+
 - `docker system prune -a`: borra los containers, imagenes que no esten activos.
 - `docker container prune -f`: borra todos los contenedores que no esten activos.
 
