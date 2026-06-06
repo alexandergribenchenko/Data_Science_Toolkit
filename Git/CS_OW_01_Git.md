@@ -15,7 +15,7 @@
 ## 02. Configurar Git
 - `git config --list` : Muestra parametros de configuracion de git (entre ellos: user.name y el user.email)
 - `git config --global user.name [user_name]` : Setea el parametro de configuración user.name
-- `git config --global user.mail [user_mail]` : Setea el parametro de configuración user.mail
+- `git config --global user.email [user_email]` : Setea el parametro de configuración user.mail
 - `git config --global init.defaultBranch [main]`: Setea el parametro de configuración init.defaultBranch en la rama `main`
 
 ## 03. Conectar repositorios: Local - Github
